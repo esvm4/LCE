@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pageNot {
+  min-height: 80vh;
+}
+
+.wrap-flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+* {
+  font-family: "Quicksand", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+  font-size: 14px;
+  color: #2e2e2e;
+  overflow-x: hidden;
+  background: #fff;
+  position: initial !important;
+  background-color: #fff;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.content-pagenot:after {
+  content: "";
+  display: block;
+  background: #252a2b;
+  width: 80px;
+  height: 4px;
+  margin: 50px auto 0;
+}
+
+.content-pagenot h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h1 {
+  color: #252a2b;
+  margin: 0 0 13px 0;
+  line-height: 1.2;
+}
+
+.content-pagenot p.subtext {
+  font-weight: 500;
+  opacity: 0.66;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height: 21px;
+}
+
+.content-pagenot a {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 30px 0 0;
+  display: block;
+}
+a {
+  transition: opacity 150ms linear, color 150ms linear, background 150ms linear;
+  color: #2e2e2e;
+  text-decoration: none;
+  outline: none;
+  background-color: transparent;
+}
+
+a:hover,
+a:focus {
+  color: #f0b791;
+  text-decoration: none;
+  outline: none;
+}
