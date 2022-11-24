@@ -47,6 +47,7 @@ table {
 input,
 textarea {
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
@@ -80,6 +81,8 @@ meter {
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
   -webkit-user-select: auto;
+  line-break: anywhere;
+  user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
