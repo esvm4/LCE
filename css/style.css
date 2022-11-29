@@ -174,7 +174,7 @@ ul {
   margin-bottom: 30px;
 }
 small {
-  font-family: 'Quicksand'', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 @media (max-width: 1200px) {
   .display-1 {
