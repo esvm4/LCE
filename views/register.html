@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
     <link rel="stylesheet" href="../css/dark.css" type="text/css" />
@@ -35,5 +30,223 @@
       href="../include/rs-plugin/css/navigation.css"
     />
   </head>
-  <body></body>
+  <body>
+    <body class="stretched block-form-2">
+      <div id="wrapper" class="clearfix">
+        <section id="content">
+          <div class="content-wrap py-0">
+            <div class="row align-items-stretch justify-content-between g-0">
+              <div
+                class="col-lg-6 col-md-6 overflow-hidden min-vh-50"
+                style="background-color: var(--themecolor)"
+              >
+                <div
+                  class="dark h-100 min-vh-md-100 d-flex flex-column justify-content-center z-1 position-relative p-5"
+                >
+                  <h1 class="fw-bold color heading-block center display-4">
+                    Tạo tài khoản
+                  </h1>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 p-6 p-lg-6">
+                <form
+                  class="row"
+                  id="event-registration"
+                  action=""
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <div class="form-process">
+                    <div class="css3-spinner">
+                      <div class="css3-spinner-scaler"></div>
+                    </div>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="register-first-name">Họ: </label>
+                    <input
+                      type="text"
+                      name="customer[first-name]"
+                      id="register-first-name"
+                      class="form-control required"
+                      value=""
+                      placeholder="Nhập họ"
+                    />
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="register-last-name">Tên:</label>
+                    <input
+                      type="text"
+                      name="customer[last-name]"
+                      id="register-last-name"
+                      class="form-control required"
+                      value=""
+                      placeholder="Nhập tên"
+                    />
+                  </div>
+
+                  <div class="col-12 form-group">
+                    <!-- dob -->
+                    <label for="register-dob">Ngày sinh:</label>
+                    <input
+                      type="date"
+                      name="customer[dob]"
+                      id="register-dob"
+                      class="form-control required"
+                      value=""
+                      placeholder="Nhập
+                    ngày sinh"
+                    />
+                  </div>
+                  <div class="col-6 form-group">
+                    <label for="register-gender"> Giới tính: </label> <br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input required"
+                        type="radio"
+                        name="customer[gender]"
+                        id="register-gender-male"
+                        value="Male"
+                      />
+                      <label
+                        class="form-check-label nott"
+                        for="register-gender-male"
+                      >
+                        Nam
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="customer[gender]"
+                        id="register-gender-female"
+                        value="Female"
+                      />
+                      <label
+                        class="form-check-label nott"
+                        for="register-gender-female"
+                        >Nữ</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="customer[gender]"
+                        id="register-gender-others"
+                        value="Others"
+                      />
+                      <label
+                        class="form-check-label nott"
+                        for="register-gender-others"
+                      >
+                        Khác
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="register-email">Email:</label>
+                    <input
+                      type="email"
+                      name="customer[email]"
+                      id="register-email"
+                      class="form-control required"
+                      value=""
+                      placeholder="Nhập email "
+                    />
+                  </div>
+
+                  <div class="col-12 form-group">
+                    <label for="register-password">Mật khẩu:</label>
+                    <input
+                      type="password"
+                      name="customer[password]"
+                      id="register-password"
+                      class="form-control required"
+                      value=""
+                      placeholder="Nhập mật khẩu"
+                    />
+                  </div>
+
+                  <div class="col-12 d-none">
+                    <input
+                      type="text"
+                      id="event-registration-botcheck"
+                      name="event-registration-botcheck"
+                      value=""
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      name="register-submit"
+                      class="btn btn-secondary btn-danger m-0"
+                    >
+                      Đăng ký
+                    </button>
+                  </div>
+                  <input type="hidden" name="prefix" value="register-" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="gotoTop" class="icon-angle-up"></div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/plugins.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <script src="js/functions.js"></script>
+      <script>
+        jQuery(document).ready(function () {
+          $(".tab-action-btn-next").click(function (e) {
+            let elementTab = $(this).parents(".tab-pane");
+            $("#step-form").valid();
+            let errors = elementTab.find(".required.error").length;
+            if (errors > 0) {
+              $("#tab-reservation > .active").nextAll("a").addClass("disabled");
+              return false;
+            } else {
+              $("#tab-reservation > .active")
+                .next("a")
+                .removeClass("disabled")
+                .trigger("click");
+              let nextTabEl = $("#tab-reservation > .active")
+                  .next("a")
+                  .removeClass("disabled"),
+                tab = new bootstrap.Tab(nextTabEl.get(0));
+
+              tab.show();
+
+              e.preventDefault();
+              return false;
+            }
+          });
+
+          $("#step-form-age").flatpickr({
+            minDate: "today",
+            dateFormat: "d/m/Y",
+          });
+
+          $("#step-form").on("formSubmitSuccess", function () {
+            $(".tab-content .tab-pane:eq(2)").removeClass("active show");
+            $(".tab-content .tab-pane:eq(0)").addClass("active show");
+            $("#tab-reservation .nav-link:eq(2)").removeClass("active");
+            $("#tab-reservation .nav-link:eq(0)").addClass("active");
+          });
+        });
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"77100b78a9fc0431","token":"0627f0b8b73941069bc19139e63db853","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </body>
 </html>
