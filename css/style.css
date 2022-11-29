@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: auto;
@@ -70,7 +77,7 @@ ul {
 body {
   line-height: 1.5;
   color: #555;
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif!important;
 }
 a {
   text-decoration: none !important;
@@ -100,7 +107,7 @@ h6 {
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif!important;
 }
 h5,
 h6 {
@@ -167,7 +174,7 @@ ul {
   margin-bottom: 30px;
 }
 small {
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand'', sans-serif;
 }
 @media (max-width: 1200px) {
   .display-1 {
@@ -339,10 +346,10 @@ span.middot {
   line-height: 0 !important;
 }
 .font-body {
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .font-primary {
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .font-secondary {
   font-family: "pt serif", serif;
@@ -826,8 +833,10 @@ a.h-text-dark:hover {
 .gradient-text {
   text-shadow: none !important;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .gradient-underline {
   background-repeat: no-repeat;
@@ -2248,6 +2257,7 @@ img.lazy:not([src]) {
   height: auto;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .fslider.h-100 .flexslider,
 .fslider.h-100 .slide,
@@ -2280,6 +2290,7 @@ img.lazy:not([src]) {
 .flexslider .slider-wrap > .slide {
   display: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .flexslider .slider-wrap img {
   width: 100%;
@@ -2733,7 +2744,9 @@ html[xmlns] .slider-wrap {
     background-color: #fff;
     border-bottom: 1px solid #eee;
     -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .sticky-header .header-wrap-clone {
     display: block;
@@ -2766,7 +2779,7 @@ html[xmlns] .slider-wrap {
 #logo a {
   width: 100%;
   color: #000;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 36px;
 }
 #logo img {
@@ -2943,7 +2956,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .menu-link span {
   display: none;
@@ -2979,7 +2992,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-weight: 400;
   color: #666;
   letter-spacing: 0;
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .sub-menu-container .menu-item:hover > .menu-link {
   font-weight: 700;
@@ -3068,6 +3081,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     -o-transform: translate(-280px, 0);
     transform: translate(-280px, 0);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform-style: preserve-3d;
   }
   #header:not(.sticky-header)
@@ -3375,7 +3389,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   .mega-menu-style-2 .mega-menu-title > .menu-link {
     font-size: 13px;
     font-weight: 700;
-    font-family: Poppins, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase !important;
     margin-bottom: 15px;
@@ -4020,7 +4034,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   color: #333;
   font-weight: 700;
   margin-top: 0 !important;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
 }
 @media (min-width: 992px) {
@@ -4275,6 +4289,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
   background-color: #bb7944;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #page-menu.sticky-page-menu #page-menu-wrap {
   position: fixed;
@@ -4570,6 +4585,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
   background-color: #f5f5f5;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .side-panel-left #side-panel {
   left: -300px;
@@ -4669,6 +4685,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
   z-index: -1;
   pointer-events: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -4694,6 +4711,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu {
 .slider-parallax .swiper-container {
   visibility: visible;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .slider-inner {
   position: absolute;
@@ -4743,8 +4761,11 @@ body:not(.stretched) .slider-parallax .slider-inner {
 .slider-parallax .slider-inner {
   will-change: transform;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: transform 0s linear;
+  transition: transform 0s linear;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 @media (max-width: 991.98px) {
   #slider {
@@ -4790,6 +4811,7 @@ body:not(.stretched) .slider-parallax .slider-inner {
 }
 .swiper-slide [data-caption-animate] {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .section .video-wrap,
 .section .yt-bg-player,
@@ -4874,6 +4896,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
   background: transparent url(images/grid.png) repeat;
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .video-placeholder {
   z-index: 4;
@@ -6417,7 +6440,7 @@ body:not(.device-touch) .portfolio {
   padding: 30px 0;
   text-align: center;
   color: #444;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 24px;
@@ -6567,7 +6590,7 @@ body:not(.device-touch) .entry-link {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 @media (min-width: 992px) {
   .postcontent .post-timeline::before {
@@ -6840,7 +6863,7 @@ img.alignright {
 .wp-caption {
   text-align: center;
   margin: 10px 20px 13px;
-  font-family: Lato, Georgia, times new roman, Times, serif;
+  font-family: 'Quicksand', Georgia, times new roman, Times, serif;
   font-style: italic;
 }
 .wp-caption img,
@@ -7472,7 +7495,7 @@ body:not(.device-touch) .button {
   font-size: 20px;
   height: auto;
   line-height: 1;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .button.button-desc span {
   display: block;
@@ -7750,8 +7773,8 @@ body:not(.device-touch) .button.button-full strong {
 .button.button-border.button-fill {
   overflow: hidden;
   transform-style: preserve-3d;
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .button.button-border.button-fill span {
   position: relative;
@@ -7777,7 +7800,7 @@ body:not(.device-touch) .button.button-full strong {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .button.button-border.button-fill.button-light::before {
   background-color: #eee;
@@ -8121,7 +8144,7 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content h3 {
   font-size: 16px;
   font-weight: 600;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
   color: #333;
@@ -8339,7 +8362,7 @@ body:not(.device-touch) .button.button-full strong {
 }
 .fbox-center.fbox-italic p {
   font-style: italic;
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .fbox-bg.fbox-center {
   margin-top: 2rem;
@@ -8524,6 +8547,7 @@ body:not(.device-touch) .button.button-full strong {
 }
 .flipbox-back,
 .flipbox-front {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 .flipbox-front {
@@ -9809,7 +9833,7 @@ body:not(.device-touch) .social-icon i {
 .tab-nav-lg li a {
   display: inline-block;
   color: #444;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -10063,7 +10087,7 @@ body:not(.device-touch) .social-icon i {
 .testimonials-grid .grid-item {
   position: relative;
   padding: 20px 0;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .clients-grid .grid-item a {
   opacity: 0.6;
@@ -10521,7 +10545,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .counter {
   font-size: 42px;
   font-weight: 600;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .counter.counter-small {
   font-size: 28px;
@@ -10632,7 +10656,7 @@ body:not(.device-touch) .rounded-skill {
 }
 .skills li .progress-percent .counter {
   font-weight: 400;
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .progress-percent::after,
 .progress-percent::before {
@@ -10699,7 +10723,6 @@ blockquote.float-end {
 }
 .quote::before {
   font-family: font-icons;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -10792,6 +10815,7 @@ blockquote.float-end {
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
+  touch-action: pan-Y;
 }
 .owl-carousel .owl-stage::after {
   content: ".";
@@ -10805,6 +10829,7 @@ blockquote.float-end {
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .owl-carousel.owl-loaded {
   display: block;
@@ -10828,9 +10853,11 @@ blockquote.float-end {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .slider-element .owl-carousel .owl-item img {
   -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
@@ -10913,7 +10940,7 @@ blockquote.float-end {
   background: url(images/icons/play.png) no-repeat;
   cursor: pointer;
   z-index: 1;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: scale 0.1s ease;
   -o-transition: scale 0.1s ease;
   transition: scale 0.1s ease;
@@ -11450,6 +11477,7 @@ blockquote.float-end {
   text-align: center;
   border-radius: 50%;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.3s ease;
 }
 .overlay-trigger-icon .icon-line-play {
@@ -11532,7 +11560,7 @@ label {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #555;
@@ -12626,7 +12654,7 @@ body:not(.device-touch) .tagcloud a {
 .widget-filter-links li a {
   display: block;
   color: #444;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 500;
 }
 .widget-filter-links li span {
@@ -12676,7 +12704,7 @@ body:not(.device-touch) .tagcloud a {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .nav-tree li i {
   font-size: 14px;
@@ -12708,7 +12736,7 @@ body:not(.device-touch) .tagcloud a {
   font-size: 12px;
   padding: 6px 0;
   letter-spacing: 1px;
-  font-family: Lato, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .nav-tree ul ul a i.icon-angle-down {
   font-size: 12px;
@@ -12730,7 +12758,7 @@ body:not(.device-touch) .tagcloud a {
   line-height: 1;
   font-size: 80px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  font-family: Poppins, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 .wedding-head .and,
 .wedding-head .first-name,
@@ -13297,6 +13325,7 @@ label.radio {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-perspective: 1000;
+  perspective: 1000;
 }
 .css3-spinner {
   position: absolute;
