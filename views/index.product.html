@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,11 +27,13 @@
       type="text/css"
       href="../include/rs-plugin/css/navigation.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="../js/app.js"> </script>
-    <script src="../js/angular-route.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/angular-route.min.js" ></script>
+    <script src="../js/angular-sanitize.min.js" ></script>
+    
   </head>
-  <body class="stretched">
+  <body class="stretched" ng-controller="myController">
     <div id="wrapper" class="clearfix">
       <section id="content">
         <div class="content-wrap">
