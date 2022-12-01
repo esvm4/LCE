@@ -8,7 +8,9 @@
             "inventory": "0",
             "price": "890000",
             "originalPrice": "1250000",
-            "productLink": "https://product.hstatic.net/200000316579/product/12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_ea9b0c0d17764aecad61edd3ab655091.jpg"
+            "discount": "29%",
+            "productLink": "https://product.hstatic.net/200000316579/product/12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_ea9b0c0d17764aecad61edd3ab655091.jpg",
+            "slug": "m-tra-inox-khong-gh"
         },
         {
             "name": "Bàn Anna chân gập",
@@ -17,8 +19,10 @@
             "room": "Phòng ngủ",
             "inventory": "26",
             "price": "790000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban-tra-banh-my-1_jtzz-8f_c258d32e134f4c669de41b836adb7801_07d86cce44da4d20aa3beebbe280e7db.jpg"
+            "originalPrice": "790000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban-tra-banh-my-1_jtzz-8f_c258d32e134f4c669de41b836adb7801_07d86cce44da4d20aa3beebbe280e7db.jpg",
+            "slug": "ban-anna-chan-g-p"
         },
         {
             "name": "Bàn Console 2 ngăn kéo gỗ sồi",
@@ -28,7 +32,9 @@
             "inventory": "28",
             "price": "7225000",
             "originalPrice": "10900000",
-            "productLink": "https://product.hstatic.net/200000316579/product/onsole-2-ngan-keo-seychelles-go-soi_1_5e09bdee5c3b4d778b6c579017fe7eb3_cb7ec237ecd749e0970a1ccfb29a9264.jpg"
+            "discount": "34%",
+            "productLink": "https://product.hstatic.net/200000316579/product/onsole-2-ngan-keo-seychelles-go-soi_1_5e09bdee5c3b4d778b6c579017fe7eb3_cb7ec237ecd749e0970a1ccfb29a9264.jpg",
+            "slug": "ban-console-2-ng-n-keo-g-s-i"
         },
         {
             "name": "Bàn LESS VP10",
@@ -37,9 +43,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "2700000",
-            "originalPrice": "0",
+            "originalPrice": "2700000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp10a_92d208ec033d443790cd50ca2e4a6fae.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp10b_c838097ac3784a1ebfda1f0c993b8849.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp10b_c838097ac3784a1ebfda1f0c993b8849.png",
+            "slug": "ban-less-vp10"
         },
         {
             "name": "Bàn PAGE 1 VP11",
@@ -49,8 +57,10 @@
             "inventory": "3",
             "price": "2700000",
             "originalPrice": "3400000",
+            "discount": "21%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp11a_305b2776558a46eba60acda1cbadae26.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp11a_305b2776558a46eba60acda1cbadae26.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp11a_305b2776558a46eba60acda1cbadae26.png",
+            "slug": "ban-page-1-vp11"
         },
         {
             "name": "Bàn PAGE 2 VP12",
@@ -60,8 +70,10 @@
             "inventory": "3",
             "price": "2700000",
             "originalPrice": "4000000",
+            "discount": "33%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp12c_9d0cf640d05f47e39523d1e0207f88ad.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp12b_3b66ae9e2fba46aa8610de4b8c43c12c.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp12b_3b66ae9e2fba46aa8610de4b8c43c12c.png",
+            "slug": "ban-page-2-vp12"
         },
         {
             "name": "Bàn PAGE 3 VP13",
@@ -71,8 +83,10 @@
             "inventory": "3",
             "price": "2900000",
             "originalPrice": "4000000",
+            "discount": "28%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp13b_5c6d3eeef5474bb08371ce8cf9547369.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp13a_bcdbee9866fe4c32b7b5b83ff4242e7b.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp13a_bcdbee9866fe4c32b7b5b83ff4242e7b.png",
+            "slug": "ban-page-3-vp13"
         },
         {
             "name": "Bàn Rio Alu 140 Ext Nardi N140",
@@ -81,9 +95,11 @@
             "room": "Sân vườn",
             "inventory": "3",
             "price": "2520000",
-            "originalPrice": "0",
+            "originalPrice": "2520000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt9d_0b79ca5cac764077ac329315fc625178_8d8c8c9971e549989a49df2169420c40.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt9b_b08f1b35d50a473aa9a56bdd20d61d7c_ecb21b2417d4479488b2adceec09bb7f.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt9b_b08f1b35d50a473aa9a56bdd20d61d7c_ecb21b2417d4479488b2adceec09bb7f.jpg",
+            "slug": "ban-rio-alu-140-ext-nardi-n140"
         },
         {
             "name": "Bàn sân vườn cao cấp N100",
@@ -93,8 +109,10 @@
             "inventory": "5",
             "price": "2300000",
             "originalPrice": "2520000",
+            "discount": "9%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt5f_c525598c9645451bb0d63005cfe1fbfa_2bb8db50db494932989e97ab1c02e7d8.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt5c_67e2931e5fb14ff7b55d1850c3633820_fa87cf4486fb43fb9c0a4e012eed2fd6.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt5c_67e2931e5fb14ff7b55d1850c3633820_fa87cf4486fb43fb9c0a4e012eed2fd6.jpg",
+            "slug": "ban-san-v-n-cao-c-p-n100"
         },
         {
             "name": "Bàn trà Genna",
@@ -103,8 +121,10 @@
             "room": "Phòng khách",
             "inventory": "12",
             "price": "4098000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban-tra-gemma_1_cd744b8bbe374d909de4d4902ef496e8_a3ad0fc925644bc7b8850418ca464b66.jpg"
+            "originalPrice": "4098000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban-tra-gemma_1_cd744b8bbe374d909de4d4902ef496e8_a3ad0fc925644bc7b8850418ca464b66.jpg",
+            "slug": "ban-tra-genna"
         },
         {
             "name": "Bàn trà Noguchi",
@@ -114,7 +134,9 @@
             "inventory": "18",
             "price": "2019000",
             "originalPrice": "3126000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban_tra_noguchi_-_tn_-_1_478a2c7a4b2843268e19b5d3c1c2e70b_ff6164eb95ce48ee8a3de41d86ecc9b3.jpg"
+            "discount": "35%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban_tra_noguchi_-_tn_-_1_478a2c7a4b2843268e19b5d3c1c2e70b_ff6164eb95ce48ee8a3de41d86ecc9b3.jpg",
+            "slug": "ban-tra-noguchi"
         },
         {
             "name": "Bình đựng xà phòng treo tường YM02",
@@ -124,7 +146,9 @@
             "inventory": "15",
             "price": "1890000",
             "originalPrice": "2200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban-sofa-doi-inox-cao-cap-2_7974761d5e5a43dd87d0d7d2735f647c_df34c56642d348b4a8542d3c9b821758.jpg"
+            "discount": "14%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban-sofa-doi-inox-cao-cap-2_7974761d5e5a43dd87d0d7d2735f647c_df34c56642d348b4a8542d3c9b821758.jpg",
+            "slug": "binh-ng-xa-phong-treo-t-ng-ym02"
         },
         {
             "name": "Bàn xếp gọn nhẹ TB01",
@@ -133,8 +157,10 @@
             "room": "Phòng khách",
             "inventory": "0",
             "price": "1300000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_92df7bd7a88c4433bd516d34fca56c8f.jpg"
+            "originalPrice": "1300000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/11-1_f33d1b5977c84d01ac0037fdcb6c7317_2430fe7863a34cbf9f2190326cd08dab_92df7bd7a88c4433bd516d34fca56c8f.jpg",
+            "slug": "ban-x-p-g-n-nh-tb01"
         },
         {
             "name": "Bộ 2 kệ góc nhà tắm dán tường",
@@ -144,7 +170,9 @@
             "inventory": "26",
             "price": "220000",
             "originalPrice": "390000",
-            "productLink": "https://product.hstatic.net/200000316579/product/345_n_75612f9d10ea415893444e689f8d5982_6262a5cd8280419088b164ee69104062.png"
+            "discount": "44%",
+            "productLink": "https://product.hstatic.net/200000316579/product/345_n_75612f9d10ea415893444e689f8d5982_6262a5cd8280419088b164ee69104062.png",
+            "slug": "b-2-k-goc-nha-t-m-dan-t-ng"
         },
         {
             "name": "Bộ bàn 4 ghế Ulsan",
@@ -154,8 +182,10 @@
             "inventory": "1",
             "price": "2495000",
             "originalPrice": "3100000",
+            "discount": "20%",
             "productLink": "https://product.hstatic.net/200000316579/product/bo-ban-an-4-ghe-ulsan-mau-trang-1_203404ccf4db470e91395b44dc604ff4_25d6b69e1e984887a6919158dacf9983.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/bo-ban-an-4-ghe-ulsan-mau-trang-1_203404ccf4db470e91395b44dc604ff4_25d6b69e1e984887a6919158dacf9983.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/bo-ban-an-4-ghe-ulsan-mau-trang-1_203404ccf4db470e91395b44dc604ff4_25d6b69e1e984887a6919158dacf9983.jpg",
+            "slug": "b-ban-4-gh-ulsan"
         },
         {
             "name": "Bộ bàn ăn 4 ghế gỗ sồi GS01",
@@ -165,7 +195,9 @@
             "inventory": "10",
             "price": "10000000",
             "originalPrice": "12000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban_an_1_4ed7fd39acd84b02a86d0da942c4d2af_6e7bb30e3ea8431fbddbcfe069bf7d07.jpg"
+            "discount": "17%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban_an_1_4ed7fd39acd84b02a86d0da942c4d2af_6e7bb30e3ea8431fbddbcfe069bf7d07.jpg",
+            "slug": "b-ban-n-4-gh-g-s-i-gs01"
         },
         {
             "name": "Bộ bàn ăn 4 ghế gỗ sồi mộc mạc GS02",
@@ -175,7 +207,9 @@
             "inventory": "5",
             "price": "9000000",
             "originalPrice": "12000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ba_2a_6da115c63535422d8bb9705516065835_7c5759e88ba24855aff95708aa732cfc.png"
+            "discount": "25%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ba_2a_6da115c63535422d8bb9705516065835_7c5759e88ba24855aff95708aa732cfc.png",
+            "slug": "b-ban-n-4-gh-g-s-i-m-c-m-c-gs02"
         },
         {
             "name": "Bộ bàn ăn 4 ghế gỗ tràm GT01",
@@ -184,9 +218,11 @@
             "room": "Phòng bếp",
             "inventory": "6",
             "price": "9000000",
-            "originalPrice": "0",
+            "originalPrice": "9000000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/bat4a_3fdb0ad019db430c86faa6c8d31cada6_bef40ee0980b41959ae432e4476b8b6e.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/bat4g_dfd0f703e7394aad87c74659a4149191_987326b1355b4908af43f5b3f0373b7a.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/bat4g_dfd0f703e7394aad87c74659a4149191_987326b1355b4908af43f5b3f0373b7a.png",
+            "slug": "b-ban-n-4-gh-g-tram-gt01"
         },
         {
             "name": "Bộ bàn ăn 6 ghế gỗ sồi MILAN GS03",
@@ -196,7 +232,9 @@
             "inventory": "6",
             "price": "8200000",
             "originalPrice": "9190000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ba5a_53d914162dc0492380d4a05bc1bc8281_08130b397ca048c3890b616482a0fc44.jpg"
+            "discount": "11%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ba5a_53d914162dc0492380d4a05bc1bc8281_08130b397ca048c3890b616482a0fc44.jpg",
+            "slug": "b-ban-n-6-gh-g-s-i-milan-gs03"
         },
         {
             "name": "Bộ bàn ăn 6 ghế hiện đại CZ01",
@@ -206,8 +244,10 @@
             "inventory": "10",
             "price": "15000000",
             "originalPrice": "59000000",
+            "discount": "75%",
             "productLink": "https://product.hstatic.net/200000316579/product/ban_an_3a_bdf8d9dc602f4725a05a85c311dec66c_79d00ae9124240c2b7b7b2943794eba4.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/ba3d_ad843a4a5c4a4763bc5e740a646a0fea_09eeb0d8497b4301b314eabb233728b8.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/ba3d_ad843a4a5c4a4763bc5e740a646a0fea_09eeb0d8497b4301b314eabb233728b8.jpg",
+            "slug": "b-ban-n-6-gh-hi-n-i-cz01"
         },
         {
             "name": "Bộ bàn ghế nhôm đúc mặt đá NT01",
@@ -216,9 +256,11 @@
             "room": "Sân vườn",
             "inventory": "7",
             "price": "39000000",
-            "originalPrice": "0",
+            "originalPrice": "39000000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/oknt1a_b5dd1695f1f341b6a4698cd0ee0dc399_c0141d7836f24d5c8a351ebc939ecf2c.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/oknt1a_b5dd1695f1f341b6a4698cd0ee0dc399_c0141d7836f24d5c8a351ebc939ecf2c.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/oknt1a_b5dd1695f1f341b6a4698cd0ee0dc399_c0141d7836f24d5c8a351ebc939ecf2c.jpg",
+            "slug": "b-ban-gh-nhom-uc-m-t-a-nt01"
         },
         {
             "name": "Bộ bàn trang điểm Blue",
@@ -228,7 +270,9 @@
             "inventory": "23",
             "price": "6490000",
             "originalPrice": "7900000",
-            "productLink": "https://product.hstatic.net/200000316579/product/bo-ban-trang-diem-nb-blue-go-cao-su_1_2bae85818bd14cf2aa7c086766ad09a9_280eaa259e98455594ef8cc3ac9d8ef2.jpg"
+            "discount": "18%",
+            "productLink": "https://product.hstatic.net/200000316579/product/bo-ban-trang-diem-nb-blue-go-cao-su_1_2bae85818bd14cf2aa7c086766ad09a9_280eaa259e98455594ef8cc3ac9d8ef2.jpg",
+            "slug": "b-ban-trang-i-m-blue"
         },
         {
             "name": "Bộ bàn trang điểm Vivid",
@@ -238,7 +282,9 @@
             "inventory": "18",
             "price": "6900000",
             "originalPrice": "8600000",
-            "productLink": "https://product.hstatic.net/200000316579/product/bo-ban-trang-diem-vivid-go-cao-su_1_57e0904463fc49e391b3ee349a96ff3c_aafbaaf3448240edbd5369644be50eb3.jpg"
+            "discount": "20%",
+            "productLink": "https://product.hstatic.net/200000316579/product/bo-ban-trang-diem-vivid-go-cao-su_1_57e0904463fc49e391b3ee349a96ff3c_aafbaaf3448240edbd5369644be50eb3.jpg",
+            "slug": "b-ban-trang-i-m-vivid"
         },
         {
             "name": "Bộ giường ngủ gỗ tự nhiên bọc nỉ",
@@ -248,7 +294,9 @@
             "inventory": "0",
             "price": "65000000",
             "originalPrice": "72530000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping__5__7f8edf4c44ff4b46bc0c432054b18288.jpeg"
+            "discount": "10%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping__5__7f8edf4c44ff4b46bc0c432054b18288.jpeg",
+            "slug": "b-gi-ng-ng-g-t-nhien-b-c-n"
         },
         {
             "name": "Bộ Sen Cây Tắm Đứng Nóng Lạnh INOX SUS 304",
@@ -258,7 +306,9 @@
             "inventory": "24",
             "price": "1500000",
             "originalPrice": "1980000",
-            "productLink": "https://product.hstatic.net/200000316579/product/untitled123_8546e868f12f4fe6a0e5dfe6a9135b88_bfb97bb9f2b740d19d270742aa589a13.png"
+            "discount": "24%",
+            "productLink": "https://product.hstatic.net/200000316579/product/untitled123_8546e868f12f4fe6a0e5dfe6a9135b88_bfb97bb9f2b740d19d270742aa589a13.png",
+            "slug": "b-sen-cay-t-m-ng-nong-l-nh-inox-sus-304"
         },
         {
             "name": "Bồn cầu điện tử TOTO",
@@ -268,7 +318,9 @@
             "inventory": "22",
             "price": "32000000",
             "originalPrice": "39890000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ban-cau-toto-ms885cdw12-440x440_8d0a3ea6b0044d0d96ef7e9f9d2441ab_717d159beaf34e919408792b65e5d3c1.jpg"
+            "discount": "20%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ban-cau-toto-ms885cdw12-440x440_8d0a3ea6b0044d0d96ef7e9f9d2441ab_717d159beaf34e919408792b65e5d3c1.jpg",
+            "slug": "b-n-c-u-i-n-t-toto"
         },
         {
             "name": "Bồn tắm Fantiny",
@@ -278,7 +330,9 @@
             "inventory": "20",
             "price": "4500000",
             "originalPrice": "5200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/bon-tam-fantiny-mbl-150s_8af3f20b17a543de8a619fa04be744fd_0110db1a3f324cd0a715c3e5b2e774fc.jpg"
+            "discount": "13%",
+            "productLink": "https://product.hstatic.net/200000316579/product/bon-tam-fantiny-mbl-150s_8af3f20b17a543de8a619fa04be744fd_0110db1a3f324cd0a715c3e5b2e774fc.jpg",
+            "slug": "b-n-t-m-fantiny"
         },
         {
             "name": "Chậu Lavabo Liền Khối Thân Tròn RM316",
@@ -288,7 +342,9 @@
             "inventory": "23",
             "price": "3450000",
             "originalPrice": "4500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/lavabo_da743fafbba8433bb259734c8a27dde3_7d6738d2589e458c8dbe9f735628a917.png"
+            "discount": "23%",
+            "productLink": "https://product.hstatic.net/200000316579/product/lavabo_da743fafbba8433bb259734c8a27dde3_7d6738d2589e458c8dbe9f735628a917.png",
+            "slug": "ch-u-lavabo-li-n-kh-i-than-tron-rm316"
         },
         {
             "name": "Chậu rửa âm bàn LN",
@@ -298,7 +354,9 @@
             "inventory": "22",
             "price": "2450000",
             "originalPrice": "2995000",
-            "productLink": "https://product.hstatic.net/200000316579/product/lt505t_270cc2fe032242f88b0c65b2a73ffc21_18cad886f0fe4f9d82996b9a735298fd.jpg"
+            "discount": "18%",
+            "productLink": "https://product.hstatic.net/200000316579/product/lt505t_270cc2fe032242f88b0c65b2a73ffc21_18cad886f0fe4f9d82996b9a735298fd.jpg",
+            "slug": "ch-u-r-a-am-ban-ln"
         },
         {
             "name": "Dây đèn led trang trí DV02",
@@ -307,9 +365,11 @@
             "room": "Phòng khách",
             "inventory": "10000",
             "price": "52000",
-            "originalPrice": "0",
+            "originalPrice": "52000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/sv6a_26272013378945659342d331512274f3.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/sv6e_a396514b4d384d29a3968364ae5be1c0.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/sv6e_a396514b4d384d29a3968364ae5be1c0.jpg",
+            "slug": "day-en-led-trang-tri-dv02"
         },
         {
             "name": "Đèn cây Pula DC11",
@@ -319,7 +379,9 @@
             "inventory": "0",
             "price": "1990000",
             "originalPrice": "2100000",
-            "productLink": "https://product.hstatic.net/200000316579/product/den-cay-pula-dc12-anh-sang-trang_5cc1749fcfa245b39162090f54be15dd.jpg"
+            "discount": "5%",
+            "productLink": "https://product.hstatic.net/200000316579/product/den-cay-pula-dc12-anh-sang-trang_5cc1749fcfa245b39162090f54be15dd.jpg",
+            "slug": "en-cay-pula-dc11"
         },
         {
             "name": "Đèn để bàn gọn nhẹ Petie",
@@ -328,9 +390,11 @@
             "room": "Văn phòng",
             "inventory": "0",
             "price": "690000",
-            "originalPrice": "0",
+            "originalPrice": "690000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/p8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_339c08be1989403faa527913bcf75214.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/p8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_339c08be1989403faa527913bcf75214.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/p8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_339c08be1989403faa527913bcf75214.jpg",
+            "slug": "en-ban-g-n-nh-petie"
         },
         {
             "name": "Đèn đọc sách gắn tường dimmer LED 9w",
@@ -340,7 +404,9 @@
             "inventory": "0",
             "price": "1900000",
             "originalPrice": "2100000",
-            "productLink": "https://product.hstatic.net/200000316579/product/led-5w-dimmer-dau-giuon-vsc1589345016_1c1c8681445f4e0aab2a7b9fd8c818ab_7dd22d5309e24e91a845c64d34f735b9.jpeg"
+            "discount": "10%",
+            "productLink": "https://product.hstatic.net/200000316579/product/led-5w-dimmer-dau-giuon-vsc1589345016_1c1c8681445f4e0aab2a7b9fd8c818ab_7dd22d5309e24e91a845c64d34f735b9.jpeg",
+            "slug": "en-c-sach-g-n-t-ng-dimmer-led-9w"
         },
         {
             "name": "Đèn ngủ/ đèn bàn cao cấp",
@@ -350,7 +416,9 @@
             "inventory": "0",
             "price": "3350000",
             "originalPrice": "5000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/28f202ca9c459eaa7614371e5d2dd6_grande_797c99e6188a4d208e6d65fc169d88d1_7ef1431fa02941acb952a059a462a2b6.jpg"
+            "discount": "33%",
+            "productLink": "https://product.hstatic.net/200000316579/product/28f202ca9c459eaa7614371e5d2dd6_grande_797c99e6188a4d208e6d65fc169d88d1_7ef1431fa02941acb952a059a462a2b6.jpg",
+            "slug": "en-ng-en-ban-cao-c-p"
         },
         {
             "name": "Đèn ốp trần Sasa 5 cánh",
@@ -360,7 +428,9 @@
             "inventory": "0",
             "price": "1500000",
             "originalPrice": "1950000",
-            "productLink": "https://product.hstatic.net/200000316579/product/den-op-tran-sasa-5-canh-large_edd2dd51e62f45c78d6e869fb3e24934_cf8d7a295f2f4be08163dc58fc2e1fa4.jpg"
+            "discount": "23%",
+            "productLink": "https://product.hstatic.net/200000316579/product/den-op-tran-sasa-5-canh-large_edd2dd51e62f45c78d6e869fb3e24934_cf8d7a295f2f4be08163dc58fc2e1fa4.jpg",
+            "slug": "en-p-tr-n-sasa-5-canh"
         },
         {
             "name": "Đèn sân vườn ánh nến DV01",
@@ -369,8 +439,10 @@
             "room": "Sân vườn",
             "inventory": "10000",
             "price": "90000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/sv4a_92c8c6c24b814092b01b9ffbbb1a8278.jpg"
+            "originalPrice": "90000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/sv4a_92c8c6c24b814092b01b9ffbbb1a8278.jpg",
+            "slug": "en-san-v-n-anh-n-n-dv01"
         },
         {
             "name": "Đèn thả LYMOSE",
@@ -380,7 +452,9 @@
             "inventory": "0",
             "price": "1050000",
             "originalPrice": "2000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/d5c081225006c9aae0a7443a48dfa617_fe416e91a564431e9fcf3507ef5cc7ae.jpg"
+            "discount": "48%",
+            "productLink": "https://product.hstatic.net/200000316579/product/d5c081225006c9aae0a7443a48dfa617_fe416e91a564431e9fcf3507ef5cc7ae.jpg",
+            "slug": "en-th-lymose"
         },
         {
             "name": "Đèn thả văn phòng TR-012",
@@ -390,7 +464,9 @@
             "inventory": "0",
             "price": "1500000",
             "originalPrice": "1850000",
-            "productLink": "https://product.hstatic.net/200000316579/product/unnamed_7f617ef6dd6c4df99437d876657cfdbf.jpg"
+            "discount": "19%",
+            "productLink": "https://product.hstatic.net/200000316579/product/unnamed_7f617ef6dd6c4df99437d876657cfdbf.jpg",
+            "slug": "en-th-v-n-phong-tr-012"
         },
         {
             "name": "Đèn treo sang trọng Hubert",
@@ -400,7 +476,9 @@
             "inventory": "0",
             "price": "1200000",
             "originalPrice": "1360000",
-            "productLink": "https://product.hstatic.net/200000316579/product/p4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_c2717543a2f04af197c4d126dcc794c5.jpg"
+            "discount": "12%",
+            "productLink": "https://product.hstatic.net/200000316579/product/p4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_c2717543a2f04af197c4d126dcc794c5.jpg",
+            "slug": "en-treo-sang-tr-ng-hubert"
         },
         {
             "name": "Đèn treo trang trí sân vườn DV03",
@@ -409,9 +487,11 @@
             "room": "Sân vườn",
             "inventory": "100000",
             "price": "360000",
-            "originalPrice": "0",
+            "originalPrice": "360000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/sv5d1_7ae7289c4874439f9ed5b10c0907e867.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/sv5c_02d5fefb2e8c485497b3159e858eb4aa.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/sv5c_02d5fefb2e8c485497b3159e858eb4aa.jpg",
+            "slug": "en-treo-trang-tri-san-v-n-dv03"
         },
         {
             "name": "Ghế ALUMINUM PLUS VP04",
@@ -420,9 +500,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "3120000",
-            "originalPrice": "0",
+            "originalPrice": "3120000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp4c_2493b69f807c437ba7655c67c10d5cd2.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp4c_2493b69f807c437ba7655c67c10d5cd2.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp4c_2493b69f807c437ba7655c67c10d5cd2.png",
+            "slug": "gh-aluminum-plus-vp04"
         },
         {
             "name": "Ghế Costa Bistrot Nardi NT04",
@@ -431,9 +513,11 @@
             "room": "Sân vườn",
             "inventory": "4",
             "price": "1600000",
-            "originalPrice": "0",
+            "originalPrice": "1600000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt8a_caa1602404aa427f922c0f2c29a163f0_574e3bb02dc2474190dcbf671bbeb7e1.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt8d_e8580fbd07c34c67a41fbc87cb58aee2_ca24c7ee39d6419399b894dd1b5594e5.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt8d_e8580fbd07c34c67a41fbc87cb58aee2_ca24c7ee39d6419399b894dd1b5594e5.jpg",
+            "slug": "gh-costa-bistrot-nardi-nt04"
         },
         {
             "name": "Ghế ERA L VP09",
@@ -443,8 +527,10 @@
             "inventory": "11",
             "price": "4500000",
             "originalPrice": "5600000",
+            "discount": "20%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp9c_c3362adc0cc5498184e2df99c9bee4b1.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp9c_c3362adc0cc5498184e2df99c9bee4b1.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp9c_c3362adc0cc5498184e2df99c9bee4b1.png",
+            "slug": "gh-era-l-vp09"
         },
         {
             "name": "Ghế gỗ bập bênh Iconic",
@@ -454,7 +540,9 @@
             "inventory": "0",
             "price": "700000",
             "originalPrice": "890000",
-            "productLink": "https://product.hstatic.net/200000316579/product/p5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_981c5bf7f2cd46f990a4c4c664737149.jpg"
+            "discount": "21%",
+            "productLink": "https://product.hstatic.net/200000316579/product/p5-2_fde6cf697c5343489c0715a2a77c9161_8ccf08b77b384087b8e47d0d62541382_981c5bf7f2cd46f990a4c4c664737149.jpg",
+            "slug": "gh-g-b-p-benh-iconic"
         },
         {
             "name": "Ghế HIGH BACK PU VP05",
@@ -463,9 +551,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "4700000",
-            "originalPrice": "0",
+            "originalPrice": "4700000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp5a_bf0e1090f9d24fc09e8a7c5a2285140b.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp5a_bf0e1090f9d24fc09e8a7c5a2285140b.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp5a_bf0e1090f9d24fc09e8a7c5a2285140b.png",
+            "slug": "gh-high-back-pu-vp05"
         },
         {
             "name": "Ghế High Back VP06",
@@ -474,9 +564,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "6380000",
-            "originalPrice": "0",
+            "originalPrice": "6380000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp6a_75e67d7e017047239602d85c3f2f9c57.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp6a_75e67d7e017047239602d85c3f2f9c57.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp6a_75e67d7e017047239602d85c3f2f9c57.png",
+            "slug": "gh-high-back-vp06"
         },
         {
             "name": "Ghế MEDIUM BACK VP07",
@@ -485,9 +577,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "2450000",
-            "originalPrice": "0",
+            "originalPrice": "2450000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp7a_a51e25e9bfbe4624a205671365fdbe98.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp7a_a51e25e9bfbe4624a205671365fdbe98.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp7a_a51e25e9bfbe4624a205671365fdbe98.png",
+            "slug": "gh-medium-back-vp07"
         },
         {
             "name": "Ghế nhựa cao cấp NC01",
@@ -496,9 +590,11 @@
             "room": "Sân vườn",
             "inventory": "3",
             "price": "2340000",
-            "originalPrice": "0",
+            "originalPrice": "2340000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt6e_f0e9c555464842d4b6395000fd2ac9a0_7908db4d90e7446eb67230b72bec295b.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt6c_854b30e9aea84006932883463d133cc4_c05b87ebf95444cd841bcf7d920325ed.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt6c_854b30e9aea84006932883463d133cc4_c05b87ebf95444cd841bcf7d920325ed.jpg",
+            "slug": "gh-nh-a-cao-c-p-nc01"
         },
         {
             "name": "Ghế nhựa sân vườn Bora chair NT03",
@@ -507,9 +603,11 @@
             "room": "Sân vườn",
             "inventory": "7",
             "price": "1800000",
-            "originalPrice": "0",
+            "originalPrice": "1800000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt04a_cadf9290f6bb48e9a944a17bed22c4ec_e0b4df8e99b443bd9aef5b5981f3712b.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt4e_ec74e3a631574978ba69597758c44b97_55a234b603364069b7775163b8c03bc1.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt4e_ec74e3a631574978ba69597758c44b97_55a234b603364069b7775163b8c03bc1.jpg",
+            "slug": "gh-nh-a-san-v-n-bora-chair-nt03"
         },
         {
             "name": "Ghế phòng khách Arctander",
@@ -519,8 +617,10 @@
             "inventory": "0",
             "price": "799000",
             "originalPrice": "999000",
+            "discount": "20%",
             "productLink": "https://product.hstatic.net/200000316579/product/3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_a75c4072dd584e5d81bb244fe80415d4_a4781aa810df4df1be3c2eab41adebb0.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_a75c4072dd584e5d81bb244fe80415d4_a4781aa810df4df1be3c2eab41adebb0.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/3cb4_c596aa3fb2e7428a87cdf3b0567c2d8a_a75c4072dd584e5d81bb244fe80415d4_a4781aa810df4df1be3c2eab41adebb0.jpg",
+            "slug": "gh-phong-khach-arctander"
         },
         {
             "name": "Ghế sân vườn cao cấp Net Bench NC02",
@@ -529,9 +629,11 @@
             "room": "Sân vườn",
             "inventory": "3",
             "price": "4950000",
-            "originalPrice": "0",
+            "originalPrice": "4950000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt7a_84cd6edea91d4c18afb2d318563619c2_027a47cfeff6489884b51c494683c38d.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt7f_1ca37392630c4c4d98b923d6a5e22e7c_4699d805bb53485b8d1d9aeca51ecaed.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt7f_1ca37392630c4c4d98b923d6a5e22e7c_4699d805bb53485b8d1d9aeca51ecaed.jpg",
+            "slug": "gh-san-v-n-cao-c-p-net-bench-nc02"
         },
         {
             "name": "Ghế sân vườn Ninfea Relax NT02",
@@ -540,9 +642,11 @@
             "room": "Sân vườn",
             "inventory": "10",
             "price": "3520000",
-            "originalPrice": "0",
+            "originalPrice": "3520000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt3a_3ffb763b4454476bb36f66a427da87ce_4404d384939d454bb72ef9b8eaf19668.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt3b_5b4c30ab45e44cdb87237466d366e2f2_51872b83807b4271ad3a103295a9fbb8.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt3b_5b4c30ab45e44cdb87237466d366e2f2_51872b83807b4271ad3a103295a9fbb8.jpg",
+            "slug": "gh-san-v-n-ninfea-relax-nt02"
         },
         {
             "name": "Ghế sofa giường kéo Roots",
@@ -552,8 +656,10 @@
             "inventory": "0",
             "price": "7200000",
             "originalPrice": "7800000",
+            "discount": "8%",
             "productLink": "https://product.hstatic.net/200000316579/product/69cb_ef26305786114080bc65e3de534bfd69_e520f75c86d7401082e892ea2542bf76_b5979ee09c0b42bdafcb78f721bbb788.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/9833_1fac3e2e156b4b0ba8052db4c3221c49_7ff387f60d6b4cb082a18c0514b15e3d_9c939ae00d9e4abdb7db6a90c6b4d013.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/9833_1fac3e2e156b4b0ba8052db4c3221c49_7ff387f60d6b4cb082a18c0514b15e3d_9c939ae00d9e4abdb7db6a90c6b4d013.jpg",
+            "slug": "gh-sofa-gi-ng-keo-roots"
         },
         {
             "name": "Ghế Sofa phòng khách S003",
@@ -563,8 +669,10 @@
             "inventory": "0",
             "price": "6800000",
             "originalPrice": "7900000",
+            "discount": "14%",
             "productLink": "https://product.hstatic.net/200000316579/product/p9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_15fc07aad9fc4ded981775302b822b66.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/p9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_15fc07aad9fc4ded981775302b822b66.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/p9-1_a13a66828d904b0388e03b4b12fdbea0_b699f1d6595244148610a17d3a3393f9_15fc07aad9fc4ded981775302b822b66.jpg",
+            "slug": "gh-sofa-phong-khach-s003"
         },
         {
             "name": "Ghế sofa TARA",
@@ -574,7 +682,9 @@
             "inventory": "0",
             "price": "5000000",
             "originalPrice": "5200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/168821345_139734528086097_4582953961432635480_n_f105369274454031b73de4ee800686df.png"
+            "discount": "4%",
+            "productLink": "https://product.hstatic.net/200000316579/product/168821345_139734528086097_4582953961432635480_n_f105369274454031b73de4ee800686df.png",
+            "slug": "gh-sofa-tara"
         },
         {
             "name": "Ghế thư giãn Moda",
@@ -584,7 +694,9 @@
             "inventory": "9",
             "price": "999000",
             "originalPrice": "1520000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ghe-thu-gian-moda-son-tinh-dien_1_3235c4411d9e440783cb40f937f4984c_e8ebdb23d9b4438095c0fd8825853ef1.jpg"
+            "discount": "34%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ghe-thu-gian-moda-son-tinh-dien_1_3235c4411d9e440783cb40f937f4984c_e8ebdb23d9b4438095c0fd8825853ef1.jpg",
+            "slug": "gh-th-gian-moda"
         },
         {
             "name": "Ghế thư giãn Sell",
@@ -594,7 +706,9 @@
             "inventory": "6",
             "price": "3490000",
             "originalPrice": "4500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ghe_thu_gian_sell_go_plywood_-_1_d79ae64daa0a49f3bec7c988d3a53a34_f2224c4b01a34bbda2a765a7c9d08df1.jpg"
+            "discount": "22%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ghe_thu_gian_sell_go_plywood_-_1_d79ae64daa0a49f3bec7c988d3a53a34_f2224c4b01a34bbda2a765a7c9d08df1.jpg",
+            "slug": "gh-th-gian-sell"
         },
         {
             "name": "Ghế trứng treo Oval",
@@ -603,8 +717,10 @@
             "room": "Sân vườn",
             "inventory": "0",
             "price": "1300000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_4b5526d549f84cfd991463ec52e06d07.jpg"
+            "originalPrice": "1300000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/sp3_97f7ec448aae411f907b7ab4d04d0e52_fc6e8187831c46299c2e264d992aa10b_4b5526d549f84cfd991463ec52e06d07.jpg",
+            "slug": "gh-tr-ng-treo-oval"
         },
         {
             "name": "Ghế tựa lưng phòng khách S004",
@@ -614,8 +730,10 @@
             "inventory": "0",
             "price": "2400000",
             "originalPrice": "3200000",
+            "discount": "25%",
             "productLink": "https://product.hstatic.net/200000316579/product/3071_d2c27994d7be4d71b388b3c9f95826c2_6d0992e1dc304fe2a5580e0529255276_811469e6774e493faf990a13cd8ce1bd.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_1172bbe39a3c4c519d1781824caf4546_afc4f00990494e8f80e8c0e8ee263a24.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/1a7b_c4db0b6210d84546a55ae4a4faeaa8bf_1172bbe39a3c4c519d1781824caf4546_afc4f00990494e8f80e8c0e8ee263a24.jpg",
+            "slug": "gh-t-a-l-ng-phong-khach-s004"
         },
         {
             "name": "Ghế VISITOR VP08",
@@ -624,9 +742,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "2350000",
-            "originalPrice": "0",
+            "originalPrice": "2350000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp8a_b7d433de949849ef9e0bce1acfaf31a9.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp8a_b7d433de949849ef9e0bce1acfaf31a9.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp8a_b7d433de949849ef9e0bce1acfaf31a9.png",
+            "slug": "gh-visitor-vp08"
         },
         {
             "name": "Giường Bella gỗ sồi",
@@ -635,8 +755,10 @@
             "room": "Phòng ngủ",
             "inventory": "1",
             "price": "11790000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/giuong-doi-bella-go-soi_2_9ce43a4c93414a4ea4a3127ec264348c_274c4a95ef8b46f98e627eac3b937492.jpg"
+            "originalPrice": "11790000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/giuong-doi-bella-go-soi_2_9ce43a4c93414a4ea4a3127ec264348c_274c4a95ef8b46f98e627eac3b937492.jpg",
+            "slug": "gi-ng-bella-g-s-i"
         },
         {
             "name": "Giường Kagawa Nâu",
@@ -646,7 +768,9 @@
             "inventory": "14",
             "price": "7980000",
             "originalPrice": "8750000",
-            "productLink": "https://product.hstatic.net/200000316579/product/giuong-ngu-kagawa_1_e990a547c3ce41e0b0f0a0911680c46c_a00f93255b6a47e49d6b775efa6348db.jpg"
+            "discount": "9%",
+            "productLink": "https://product.hstatic.net/200000316579/product/giuong-ngu-kagawa_1_e990a547c3ce41e0b0f0a0911680c46c_a00f93255b6a47e49d6b775efa6348db.jpg",
+            "slug": "gi-ng-kagawa-nau"
         },
         {
             "name": "Giường Marseille",
@@ -656,7 +780,9 @@
             "inventory": "0",
             "price": "95000000",
             "originalPrice": "100000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping__4__d5f3bcd0bb5a4f74949cb691034db51a.jpeg"
+            "discount": "5%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping__4__d5f3bcd0bb5a4f74949cb691034db51a.jpeg",
+            "slug": "gi-ng-marseille"
         },
         {
             "name": "Giường ngủ",
@@ -666,7 +792,9 @@
             "inventory": "0",
             "price": "18000000",
             "originalPrice": "23700000",
-            "productLink": "https://product.hstatic.net/200000316579/product/20210403_195149_1af7345b819541a5b89be07368881113.png"
+            "discount": "24%",
+            "productLink": "https://product.hstatic.net/200000316579/product/20210403_195149_1af7345b819541a5b89be07368881113.png",
+            "slug": "gi-ng-ng"
         },
         {
             "name": "Giường ngủ 1011",
@@ -676,7 +804,9 @@
             "inventory": "0",
             "price": "27500000",
             "originalPrice": "31000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping__6__80636090d88d45e39379e64a8e979c93.jpeg"
+            "discount": "11%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping__6__80636090d88d45e39379e64a8e979c93.jpeg",
+            "slug": "gi-ng-ng-1011"
         },
         {
             "name": "GIƯỜNG NGỦ GẤP",
@@ -686,7 +816,9 @@
             "inventory": "0",
             "price": "2000000",
             "originalPrice": "2600000",
-            "productLink": "https://product.hstatic.net/200000316579/product/167033314_785643628735116_4189944343623278295_n_0220fd78059c46c7bfbbe0699365c678.png"
+            "discount": "23%",
+            "productLink": "https://product.hstatic.net/200000316579/product/167033314_785643628735116_4189944343623278295_n_0220fd78059c46c7bfbbe0699365c678.png",
+            "slug": "gi-ng-ng-g-p"
         },
         {
             "name": "Giường ngủ gỗ công nghiệp Ohaha",
@@ -696,7 +828,9 @@
             "inventory": "0",
             "price": "5750000",
             "originalPrice": "7500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/product_15205_1_7d193b54f04d479eb7aa2b532b44b0e6.png"
+            "discount": "23%",
+            "productLink": "https://product.hstatic.net/200000316579/product/product_15205_1_7d193b54f04d479eb7aa2b532b44b0e6.png",
+            "slug": "gi-ng-ng-g-cong-nghi-p-ohaha"
         },
         {
             "name": "Giường ngủ hộp gỗ MDF Veneer",
@@ -706,7 +840,9 @@
             "inventory": "0",
             "price": "5000000",
             "originalPrice": "5500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/giuong-ngu-hop-go-mdf-veneer-mau-nau-canh-gian-chay-chi-dep-gia-re-1_9820b932f42349bc9be54536d99800e0.jpg"
+            "discount": "9%",
+            "productLink": "https://product.hstatic.net/200000316579/product/giuong-ngu-hop-go-mdf-veneer-mau-nau-canh-gian-chay-chi-dep-gia-re-1_9820b932f42349bc9be54536d99800e0.jpg",
+            "slug": "gi-ng-ng-h-p-g-mdf-veneer"
         },
         {
             "name": "Giường ngủ nệm Gemellus",
@@ -715,8 +851,10 @@
             "room": "Phòng ngủ",
             "inventory": "21",
             "price": "990000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/us_upholstered_bed_king_01_dsc2307.6a_d3aa5d50d9bd4958a01b1c4ee1fcf149_d780f20a6a474de7814d0535bd1cc498.jpg"
+            "originalPrice": "990000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/us_upholstered_bed_king_01_dsc2307.6a_d3aa5d50d9bd4958a01b1c4ee1fcf149_d780f20a6a474de7814d0535bd1cc498.jpg",
+            "slug": "gi-ng-ng-n-m-gemellus"
         },
         {
             "name": "Hộp đựng giấy Toilet Joyou",
@@ -726,7 +864,9 @@
             "inventory": "25",
             "price": "350000",
             "originalPrice": "650000",
-            "productLink": "https://product.hstatic.net/200000316579/product/hop_dung_giay_a379b0f29ce64bccb581b165b1b1253f_80c7f0c857db4c268e6008bf664d2639.jpg"
+            "discount": "46%",
+            "productLink": "https://product.hstatic.net/200000316579/product/hop_dung_giay_a379b0f29ce64bccb581b165b1b1253f_80c7f0c857db4c268e6008bf664d2639.jpg",
+            "slug": "h-p-ng-gi-y-toilet-joyou"
         },
         {
             "name": "Kệ CLOUDY VP02",
@@ -735,9 +875,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "2500000",
-            "originalPrice": "0",
+            "originalPrice": "2500000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp2a_aec13cabf90344f6b1e4cffd0e377378.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp2c_364c12c238e044f99103c44e54df42b0.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp2c_364c12c238e044f99103c44e54df42b0.png",
+            "slug": "k-cloudy-vp02"
         },
         {
             "name": "Kệ CUBE VP01",
@@ -746,9 +888,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "2000000",
-            "originalPrice": "0",
+            "originalPrice": "2000000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp1c_98cd0e49bb2e4e679c5384498ef198e2.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp1d_110694f5026e4a22b585749309e0fff8.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp1d_110694f5026e4a22b585749309e0fff8.png",
+            "slug": "k-cube-vp01"
         },
         {
             "name": "Kệ dép 5 tầng gỗ cao su",
@@ -758,7 +902,9 @@
             "inventory": "1",
             "price": "799000",
             "originalPrice": "1200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ke-dep-5-tang-ib573-mau-canh-gian-1_4ab913b18a9c43bbb7cb2aa43c269cf5_43c14afd6fcf4785a244eb9f4fc3dcec.jpg"
+            "discount": "33%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ke-dep-5-tang-ib573-mau-canh-gian-1_4ab913b18a9c43bbb7cb2aa43c269cf5_43c14afd6fcf4785a244eb9f4fc3dcec.jpg",
+            "slug": "k-dep-5-t-ng-g-cao-su"
         },
         {
             "name": "Kệ góc Pyra 5 tầng",
@@ -768,7 +914,9 @@
             "inventory": "32",
             "price": "989000",
             "originalPrice": "1350000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ke_goc_pyral_5_tang_-_tn_-_1_5f2d146aa2274abbbb5f00a7b0dad5de_ca4bfcbc762d43e69f15c8fffc66e1a7.jpg"
+            "discount": "27%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ke_goc_pyral_5_tang_-_tn_-_1_5f2d146aa2274abbbb5f00a7b0dad5de_ca4bfcbc762d43e69f15c8fffc66e1a7.jpg",
+            "slug": "k-goc-pyra-5-t-ng"
         },
         {
             "name": "Kệ sách",
@@ -778,7 +926,9 @@
             "inventory": "0",
             "price": "3200000",
             "originalPrice": "3500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/gia-sach-nghe-thuat-sat-hop-go-gs04-16-600x600_6ac22d1de9c846f291cfb81699bade3f.jpg"
+            "discount": "9%",
+            "productLink": "https://product.hstatic.net/200000316579/product/gia-sach-nghe-thuat-sat-hop-go-gs04-16-600x600_6ac22d1de9c846f291cfb81699bade3f.jpg",
+            "slug": "k-sach"
         },
         {
             "name": "Kệ sách NEO VP14",
@@ -787,9 +937,11 @@
             "room": "Văn phòng",
             "inventory": "3",
             "price": "650000",
-            "originalPrice": "0",
+            "originalPrice": "650000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp14a_f75558f6ae45456ea21c97ea49f90174.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp14a_f75558f6ae45456ea21c97ea49f90174.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp14a_f75558f6ae45456ea21c97ea49f90174.png",
+            "slug": "k-sach-neo-vp14"
         },
         {
             "name": "Kệ ti vi mặt đá TV-69",
@@ -799,7 +951,9 @@
             "inventory": "0",
             "price": "14750000",
             "originalPrice": "18000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ke-tivi-bang-go-tu-nhien-dep-tv-69_695d4abfeb6747a488256122cf34c15e.jpg"
+            "discount": "18%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ke-tivi-bang-go-tu-nhien-dep-tv-69_695d4abfeb6747a488256122cf34c15e.jpg",
+            "slug": "k-ti-vi-m-t-a-tv-69"
         },
         {
             "name": "Kệ tivi",
@@ -808,8 +962,10 @@
             "room": "Phòng khách",
             "inventory": "8",
             "price": "5200000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/-ti-vi-phong-khach-sieu-lon-ghs-337-5_5032a0ac83f047d2958dfbf2e38e4999_734166bd9a8742fe8c1b569ed0f1f200.jpg"
+            "originalPrice": "5200000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/-ti-vi-phong-khach-sieu-lon-ghs-337-5_5032a0ac83f047d2958dfbf2e38e4999_734166bd9a8742fe8c1b569ed0f1f200.jpg",
+            "slug": "k-tivi"
         },
         {
             "name": "Kệ trang trí khung sắt mặt gỗ GHK-23",
@@ -819,7 +975,9 @@
             "inventory": "0",
             "price": "1750000",
             "originalPrice": "2250000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ke-trang-tri-khung-sat-mat-go-cao-su-gia-re-ghz-494_ae9fb541a1ad4a4a9b0bc0a466abdacc.jpg"
+            "discount": "22%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ke-trang-tri-khung-sat-mat-go-cao-su-gia-re-ghz-494_ae9fb541a1ad4a4a9b0bc0a466abdacc.jpg",
+            "slug": "k-trang-tri-khung-s-t-m-t-g-ghk-23"
         },
         {
             "name": "Kệ trang trí VNUS1013",
@@ -829,7 +987,9 @@
             "inventory": "0",
             "price": "1925000",
             "originalPrice": "2350000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping__2__ea756d1b1ae548d4809f6df468d85dae.jpeg"
+            "discount": "18%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping__2__ea756d1b1ae548d4809f6df468d85dae.jpeg",
+            "slug": "k-trang-tri-vnus1013"
         },
         {
             "name": "Kệ trưng bày AK005",
@@ -838,8 +998,10 @@
             "room": "Phòng khách",
             "inventory": "15",
             "price": "2890000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/ak007-ke-2_73f6790893f14d4e90a4f70493288134_3dfd2c7a4ce74006a390b8b7a271e36d.jpg"
+            "originalPrice": "2890000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ak007-ke-2_73f6790893f14d4e90a4f70493288134_3dfd2c7a4ce74006a390b8b7a271e36d.jpg",
+            "slug": "k-tr-ng-bay-ak005"
         },
         {
             "name": "Kệ trưng bày Vennice",
@@ -849,7 +1011,9 @@
             "inventory": "15",
             "price": "2890000",
             "originalPrice": "4200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/ak009-ke-trung-bay-1_2ef93f75f6104fdc920ed58a3a5a944e_d24125c0431d4cf0a0996388e523f589.jpg"
+            "discount": "31%",
+            "productLink": "https://product.hstatic.net/200000316579/product/ak009-ke-trung-bay-1_2ef93f75f6104fdc920ed58a3a5a944e_d24125c0431d4cf0a0996388e523f589.jpg",
+            "slug": "k-tr-ng-bay-vennice"
         },
         {
             "name": "Máy sấy tay tốc độ cao",
@@ -859,7 +1023,9 @@
             "inventory": "16",
             "price": "5300000",
             "originalPrice": "6790000",
-            "productLink": "https://product.hstatic.net/200000316579/product/may-say-tay-toc-do-cao-toto-tyc322wf_e127e3cb492a49c1a7f6410a5cacb601_c06e25f0133e497d91e9cfb4cab2064b.jpg"
+            "discount": "22%",
+            "productLink": "https://product.hstatic.net/200000316579/product/may-say-tay-toc-do-cao-toto-tyc322wf_e127e3cb492a49c1a7f6410a5cacb601_c06e25f0133e497d91e9cfb4cab2064b.jpg",
+            "slug": "may-s-y-tay-t-c-cao"
         },
         {
             "name": "Phòng tắm đứng vách kín EUROCA",
@@ -869,7 +1035,9 @@
             "inventory": "14",
             "price": "7000000",
             "originalPrice": "9200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/phong_tam_57ce8dbdedfa4252b525bb6b34315223_d20ddefb1404482ca52e871b28fce5b0.png"
+            "discount": "24%",
+            "productLink": "https://product.hstatic.net/200000316579/product/phong_tam_57ce8dbdedfa4252b525bb6b34315223_d20ddefb1404482ca52e871b28fce5b0.png",
+            "slug": "phong-t-m-ng-vach-kin-euroca"
         },
         {
             "name": "Set Tủ quần áo gỗ",
@@ -879,7 +1047,9 @@
             "inventory": "17",
             "price": "10950000",
             "originalPrice": "11250000",
-            "productLink": "https://product.hstatic.net/200000316579/product/1_11ee58a5a51347959053ecebc90256fa_873a7cdb6bad41f0a4c06129b4dc2632.png"
+            "discount": "3%",
+            "productLink": "https://product.hstatic.net/200000316579/product/1_11ee58a5a51347959053ecebc90256fa_873a7cdb6bad41f0a4c06129b4dc2632.png",
+            "slug": "set-t-qu-n-ao-g"
         },
         {
             "name": "Sofa Băng Torino",
@@ -888,9 +1058,11 @@
             "room": "Phòng khách",
             "inventory": "1",
             "price": "10000000",
-            "originalPrice": "0",
+            "originalPrice": "10000000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/sofa_torino_tim_3_ghe_truoc_l3rg-1w_0b393473e603452a87b8d83798cb5eb2_7ccfb7b0ec934cc1bcae7d7b639e938c.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/sofa_torino_tim_3_ghe_truoc_l3rg-1w_0b393473e603452a87b8d83798cb5eb2_7ccfb7b0ec934cc1bcae7d7b639e938c.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/sofa_torino_tim_3_ghe_truoc_l3rg-1w_0b393473e603452a87b8d83798cb5eb2_7ccfb7b0ec934cc1bcae7d7b639e938c.jpg",
+            "slug": "sofa-b-ng-torino"
         },
         {
             "name": "Sofa bed",
@@ -899,8 +1071,10 @@
             "room": "Phòng ngủ",
             "inventory": "6",
             "price": "7890000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/imsb15-1_9c8cb591f4514decb5641370dd7a3960_7c38ee06a32840edb21ffc6c04d453b1.jpg"
+            "originalPrice": "7890000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/imsb15-1_9c8cb591f4514decb5641370dd7a3960_7c38ee06a32840edb21ffc6c04d453b1.jpg",
+            "slug": "sofa-bed"
         },
         {
             "name": "SOFA đa năng ĐN01",
@@ -909,9 +1083,11 @@
             "room": "Phòng ngủ",
             "inventory": "7777",
             "price": "8000000",
-            "originalPrice": "0",
+            "originalPrice": "8000000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/dn1c_38bd712b90464c34be53ac277d449123.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/dn1c_38bd712b90464c34be53ac277d449123.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/dn1c_38bd712b90464c34be53ac277d449123.jpg",
+            "slug": "sofa-a-n-ng-n01"
         },
         {
             "name": "Sofa đơn Allba",
@@ -921,7 +1097,9 @@
             "inventory": "18",
             "price": "2499000",
             "originalPrice": "3250000",
-            "productLink": "https://product.hstatic.net/200000316579/product/sofa_don_alba_nem_vai_-_1_35944347bd2f455683e8b20192253799_108092493141493f81353a40585b4f94.jpg"
+            "discount": "23%",
+            "productLink": "https://product.hstatic.net/200000316579/product/sofa_don_alba_nem_vai_-_1_35944347bd2f455683e8b20192253799_108092493141493f81353a40585b4f94.jpg",
+            "slug": "sofa-n-allba"
         },
         {
             "name": "Sofa Komodo AC01",
@@ -931,8 +1109,10 @@
             "inventory": "2",
             "price": "10000000",
             "originalPrice": "13110000",
+            "discount": "24%",
             "productLink": "https://product.hstatic.net/200000316579/product/nt2d_9e5aeb3e43244041a128dd724998cb2d_6b7fa114142b433dbe7441c556122696.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/nt2a_9dc8f352ab90487cb7f917393bb9e62f_8f7111bed01743f79ebe4d546882a027.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/nt2a_9dc8f352ab90487cb7f917393bb9e62f_8f7111bed01743f79ebe4d546882a027.jpg",
+            "slug": "sofa-komodo-ac01"
         },
         {
             "name": "Thanh vắt khăn BIBI",
@@ -942,7 +1122,9 @@
             "inventory": "18",
             "price": "3250000",
             "originalPrice": "4300000",
-            "productLink": "https://product.hstatic.net/200000316579/product/thanh-vat-khan-toto-tx4w_8b3c77ac22424b698778034e54c116e5_a6a59daa01f243169e9a6ad42fe0d61d.jpg"
+            "discount": "24%",
+            "productLink": "https://product.hstatic.net/200000316579/product/thanh-vat-khan-toto-tx4w_8b3c77ac22424b698778034e54c116e5_a6a59daa01f243169e9a6ad42fe0d61d.jpg",
+            "slug": "thanh-v-t-kh-n-bibi"
         },
         {
             "name": "Tủ áo 3 cánh Country Cottage gỗ sồi",
@@ -951,8 +1133,10 @@
             "room": "Phòng ngủ",
             "inventory": "24",
             "price": "19000000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/tu-ao-3-canh-country-cottage-go-soi_1_0d4db4c712b34f009d4f99cfb247f8ef_712335c9a74040d3975b40f3b1c10d64.jpg"
+            "originalPrice": "19000000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tu-ao-3-canh-country-cottage-go-soi_1_0d4db4c712b34f009d4f99cfb247f8ef_712335c9a74040d3975b40f3b1c10d64.jpg",
+            "slug": "t-ao-3-canh-country-cottage-g-s-i"
         },
         {
             "name": "Tủ áo cửa trượt TARA",
@@ -962,7 +1146,9 @@
             "inventory": "0",
             "price": "48000000",
             "originalPrice": "50000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/product_12379_1_73c5b0545a9842f3b84f9cd4b9d2e675.png"
+            "discount": "4%",
+            "productLink": "https://product.hstatic.net/200000316579/product/product_12379_1_73c5b0545a9842f3b84f9cd4b9d2e675.png",
+            "slug": "t-ao-c-a-tr-t-tara"
         },
         {
             "name": "Tủ Bếp DOLCE màu trắng",
@@ -971,8 +1157,10 @@
             "room": "Phòng bếp",
             "inventory": "10",
             "price": "11890000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/tu_chen_9df15cf21d2c4d32b118d9e909418336_f885a53cbc4c45b694b543080e4c45da.jpg"
+            "originalPrice": "11890000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tu_chen_9df15cf21d2c4d32b118d9e909418336_f885a53cbc4c45b694b543080e4c45da.jpg",
+            "slug": "t-b-p-dolce-mau-tr-ng"
         },
         {
             "name": "Tủ bếp gỗ sồi tự nhiên TB01",
@@ -981,8 +1169,10 @@
             "room": "Phòng bếp",
             "inventory": "7777",
             "price": "3000000",
-            "originalPrice": "0",
-            "productLink": "https://product.hstatic.net/200000316579/product/nb1a_b9b2d00420fc49fb83b4688720f3173a.png"
+            "originalPrice": "3000000",
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/nb1a_b9b2d00420fc49fb83b4688720f3173a.png",
+            "slug": "t-b-p-g-s-i-t-nhien-tb01"
         },
         {
             "name": "Tủ đầu giường 2 ngăn kéo Rora - Grey",
@@ -992,7 +1182,9 @@
             "inventory": "5",
             "price": "2700000",
             "originalPrice": "3900000",
-            "productLink": "https://product.hstatic.net/200000316579/product/-2-ngan-keo-rora---grey-go-tu-nhien_1_1482145e81c240c3bb4730c5dabc888c_4b98d5cfae8f4935a0f504abd3733f40.jpg"
+            "discount": "31%",
+            "productLink": "https://product.hstatic.net/200000316579/product/-2-ngan-keo-rora---grey-go-tu-nhien_1_1482145e81c240c3bb4730c5dabc888c_4b98d5cfae8f4935a0f504abd3733f40.jpg",
+            "slug": "t-u-gi-ng-2-ng-n-keo-rora-grey"
         },
         {
             "name": "Tủ đựng giày LaSo",
@@ -1002,7 +1194,9 @@
             "inventory": "0",
             "price": "1000000",
             "originalPrice": "1000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/tu-giay-moi-02-1_4d75147cfdc342499a263e0ebb6777b5.jpg"
+            "discount": "0%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tu-giay-moi-02-1_4d75147cfdc342499a263e0ebb6777b5.jpg",
+            "slug": "t-ng-giay-laso"
         },
         {
             "name": "Tủ Giày phủ Melmaine",
@@ -1012,7 +1206,9 @@
             "inventory": "5",
             "price": "2250000",
             "originalPrice": "2500000",
-            "productLink": "https://product.hstatic.net/200000316579/product/tu-giay-036-kho-noi-that-sai-gon_0d5447ccf6364ddca287023f1a64e64c_f1210a122f9b4ce3868bda2d37e58e56.jpg"
+            "discount": "10%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tu-giay-036-kho-noi-that-sai-gon_0d5447ccf6364ddca287023f1a64e64c_f1210a122f9b4ce3868bda2d37e58e56.jpg",
+            "slug": "t-giay-ph-melmaine"
         },
         {
             "name": "Tủ Giày – Tủ Trang trí Gỗ Sồi",
@@ -1022,7 +1218,9 @@
             "inventory": "2",
             "price": "1900000",
             "originalPrice": "1950000",
-            "productLink": "https://product.hstatic.net/200000316579/product/34bcf058db8dbddf40e828c036bdd67f_ef249f14536947368a17f56a0441edc0_7a67ed2c0d1747cc98f7b102e6b327d4.jpg"
+            "discount": "3%",
+            "productLink": "https://product.hstatic.net/200000316579/product/34bcf058db8dbddf40e828c036bdd67f_ef249f14536947368a17f56a0441edc0_7a67ed2c0d1747cc98f7b102e6b327d4.jpg",
+            "slug": "t-giay-t-trang-tri-g-s-i"
         },
         {
             "name": "Tủ kệ tivi GHS-3385",
@@ -1032,7 +1230,9 @@
             "inventory": "0",
             "price": "18500000",
             "originalPrice": "20000000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping__1__d8274123ae9f460a81a9b72932b88d89.jpeg"
+            "discount": "8%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping__1__d8274123ae9f460a81a9b72932b88d89.jpeg",
+            "slug": "t-k-tivi-ghs-3385"
         },
         {
             "name": "Tủ NEO PED VP15",
@@ -1041,9 +1241,11 @@
             "room": "Văn phòng",
             "inventory": "2",
             "price": "1450000",
-            "originalPrice": "0",
+            "originalPrice": "1450000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp15_197f8ef9c2f44e36993252bcd7485bb4.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp15_197f8ef9c2f44e36993252bcd7485bb4.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp15_197f8ef9c2f44e36993252bcd7485bb4.png",
+            "slug": "t-neo-ped-vp15"
         },
         {
             "name": "TỦ QUẦN ÁO THÔNG MINH",
@@ -1053,7 +1255,9 @@
             "inventory": "0",
             "price": "1700000",
             "originalPrice": "1900000",
-            "productLink": "https://product.hstatic.net/200000316579/product/167976565_485945245925087_6626387844349652150_n_3b79e5ab94114c4d8bc182222fef705f.png"
+            "discount": "11%",
+            "productLink": "https://product.hstatic.net/200000316579/product/167976565_485945245925087_6626387844349652150_n_3b79e5ab94114c4d8bc182222fef705f.png",
+            "slug": "t-qu-n-ao-thong-minh"
         },
         {
             "name": "Tủ sắt CHERRY VP03",
@@ -1062,9 +1266,11 @@
             "room": "Phòng ngủ",
             "inventory": "3",
             "price": "2120000",
-            "originalPrice": "0",
+            "originalPrice": "2120000",
+            "discount": "0%",
             "productLink": "https://product.hstatic.net/200000316579/product/vp3a_b455f9fc95c547fd8edac113c85208c8.png",
-            "variableLink": "https://product.hstatic.net/200000316579/product/vp3a_b455f9fc95c547fd8edac113c85208c8.png"
+            "variableLink": "https://product.hstatic.net/200000316579/product/vp3a_b455f9fc95c547fd8edac113c85208c8.png",
+            "slug": "t-s-t-cherry-vp03"
         },
         {
             "name": "Tủ tab đầu giường 2 ngăn gỗ",
@@ -1074,7 +1280,9 @@
             "inventory": "0",
             "price": "1000000",
             "originalPrice": "1200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/shopping_4c1ca1dacfa94a34b0b0090d17c6d46b.jpeg"
+            "discount": "17%",
+            "productLink": "https://product.hstatic.net/200000316579/product/shopping_4c1ca1dacfa94a34b0b0090d17c6d46b.jpeg",
+            "slug": "t-tab-u-gi-ng-2-ng-n-g"
         },
         {
             "name": "Tủ Tivi 1 cánh County",
@@ -1084,7 +1292,9 @@
             "inventory": "26",
             "price": "5800000",
             "originalPrice": "9200000",
-            "productLink": "https://product.hstatic.net/200000316579/product/tu-tv-1-canh-country-cottage-go-soi_1_93423ac3a76046d9b1f6dedabd580156_3e766fcea11e4983bc364b1ab63472fa.jpg"
+            "discount": "37%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tu-tv-1-canh-country-cottage-go-soi_1_93423ac3a76046d9b1f6dedabd580156_3e766fcea11e4983bc364b1ab63472fa.jpg",
+            "slug": "t-tivi-1-canh-county"
         },
         {
             "name": "Vòi chậu nóng lạnh TOTO",
@@ -1094,7 +1304,9 @@
             "inventory": "18",
             "price": "3720000",
             "originalPrice": "4900000",
-            "productLink": "https://product.hstatic.net/200000316579/product/tlg11303v_24e7ac693fe441b3973d4d1439e153e5_1c75fe7bcc474e77a503f1a7a67571dd.jpg"
+            "discount": "24%",
+            "productLink": "https://product.hstatic.net/200000316579/product/tlg11303v_24e7ac693fe441b3973d4d1439e153e5_1c75fe7bcc474e77a503f1a7a67571dd.jpg",
+            "slug": "voi-ch-u-nong-l-nh-toto"
         },
         {
             "name": "Vòi xịt vệ sinh đồng RM1001",
@@ -1104,7 +1316,9 @@
             "inventory": "20",
             "price": "200000",
             "originalPrice": "495000",
-            "productLink": "https://product.hstatic.net/200000316579/product/voi_xit_dong_9c6ca264c69445bd87a15e1da61c4b19_6cb379b71e834f058da4d2dae448691c.png"
+            "discount": "60%",
+            "productLink": "https://product.hstatic.net/200000316579/product/voi_xit_dong_9c6ca264c69445bd87a15e1da61c4b19_6cb379b71e834f058da4d2dae448691c.png",
+            "slug": "voi-x-t-v-sinh-ng-rm1001"
         },
         {
             "name": "XÍCH ĐU NGOÀI TRỜI GỖ XD02",
@@ -1114,8 +1328,10 @@
             "inventory": "12",
             "price": "13400000",
             "originalPrice": "18000000",
+            "discount": "26%",
             "productLink": "https://product.hstatic.net/200000316579/product/sv1a_1c06b58a2c26471694d88239155fdc2f.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/sv1a_1c06b58a2c26471694d88239155fdc2f.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/sv1a_1c06b58a2c26471694d88239155fdc2f.jpg",
+            "slug": "xich-u-ngoai-tr-i-g-xd02"
         },
         {
             "name": "XÍCH ĐU NGOÀI TRỜI NHỰA GIẢ MÂY XD01",
@@ -1125,8 +1341,10 @@
             "inventory": "12",
             "price": "11400000",
             "originalPrice": "15000000",
+            "discount": "24%",
             "productLink": "https://product.hstatic.net/200000316579/product/sv1b_4b5d7504ba8b4fe8b8474f9cf33e50c1.jpg",
-            "variableLink": "https://product.hstatic.net/200000316579/product/sv1b_4b5d7504ba8b4fe8b8474f9cf33e50c1.jpg"
+            "variableLink": "https://product.hstatic.net/200000316579/product/sv1b_4b5d7504ba8b4fe8b8474f9cf33e50c1.jpg",
+            "slug": "xich-u-ngoai-tr-i-nh-a-gi-may-xd01"
         }
     ]
 }
