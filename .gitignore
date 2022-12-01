@@ -1,0 +1,6 @@
+# All test files, test folders, and files and folders in any test folder
+test
+
+# All temp/tmp files, temp/tmp folders, and files and folders in any temp/tmp folder
+temp
+tmp
