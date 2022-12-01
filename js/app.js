@@ -16,9 +16,7 @@ myApp.config(function($routeProvider){
       redirectTo: "/",
     });
 });
-myApp.controller(
-  "myController",
-  function myController($rootScope, $scope, $location, $http) {
+myApp.controller("myController",function myController($rootScope, $scope, $location, $http) {
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){
         $scope.products=response.data.products;
