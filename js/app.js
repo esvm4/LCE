@@ -1,20 +1,20 @@
 var myApp = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 
-// myApp.config(function($routeProvider){
-//     $routeProvider
-//     .when('/',{
-//         templateUrl: '../views/index.product.html'
-//     })
-//     // :slug để làm url unique và đẹp hơn
-//     .when("/product/:slug", {
-//       templateUrl: "product.html",
-//       controller: "myController",
-//     })
-//     //khởi tạo mặc định chạy trang home
-//     .otherwise({
-//       redirectTo: "/",
-//     });
-// });
+myApp.config(function($routeProvider){
+    $routeProvider
+    .when('/',{
+        templateUrl: '../views/index.product.html'
+    })
+    // :slug để làm url unique và đẹp hơn
+    .when("/product/:slug", {
+      templateUrl: "product.html",
+      controller: "myController",
+    })
+    //khởi tạo mặc định chạy trang home
+    .otherwise({
+      redirectTo: "/",
+    });
+});
 myApp.controller("myController",function myController($rootScope, $scope, $location, $http) {
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){

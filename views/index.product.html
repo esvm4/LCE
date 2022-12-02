@@ -39,7 +39,7 @@
         <div class="content-wrap">
           <div class="container">
             <div class="row gutter-50 mb-3">
-              <div ng-repeat="product in products" ng-show="product.price != product.orginalPrice"
+              <div ng-repeat="product in products |orderBy: '-discount' | limitTo:12 " ng-show="product.price != product.orginalPrice"
                 class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100 mb-3"
               >
                 <div class="border-0 h-shadow h-translatey-sm all-ts">
