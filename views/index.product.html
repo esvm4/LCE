@@ -40,7 +40,7 @@
           <div class="container">
             <div class="row gutter-50 mb-3">
               <div ng-repeat="product in products |orderBy: '-discount' | limitTo:12 " ng-show="product.price != product.orginalPrice"
-                class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100 mb-3"
+                class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100"
               >
                 <div class="border-0 h-shadow h-translatey-sm all-ts">
                   <div class="product-image">
@@ -79,8 +79,8 @@
                       <h3><a href="#">{{product.name}}</a></h3>
                     </div>
                     <div class="product-price">
-                      <del>{{product.originalPrice}} <sup>đ</sup></del>
-                      <ins>{{product.price}} <sup>đ</sup></ins>
+                      <del>{{product.originalPrice}}₫</del>
+                      <ins>{{product.price}}₫</ins>
                     </div>
                     <!-- <div class="product-rating mt-2">
                       <i class="icon-star3 text-warning"></i>
