@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="myApp">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
+
+    <title>product.single</title>
+
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/angular-route.min.js"></script>
+    <script src="../js/angular-sanitize.min.js"></script>
+  </head>
+  <body class="stretched" ng-controller="myController">
+    <div id="wrapper" class="clearfix" ng-repeat="product in products">
+      <section id="content">
+        <div class="content-wrap pb-0">
+          <div class="single-product mb-6">
+            <div class="product">
+              <div class="container-fluid">
+                <div class="row gutter-50">
+                  <div class="col-xl-2"></div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <img
+                      class="d-block mx-auto"
+                      src="{{product.image}}"
+                      alt="{{product.slug}}"
+                    />
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-0">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="product-price">
+                        <del>{{product.originalPrice}}₫</del>
+                        <ins>{{product.price}}₫</ins>
+                        <div class="text-warning">-{{product.discount}}</div>
+                      </div>
+                    </div>
+                    <div class="line line-sm"></div>
+
+                    <form
+                      class="cart mb-0 d-flex justify-content-between align-items-center"
+                      method="post"
+                      enctype="multipart/form-data"
+                    >
+                      <div class="quantity clearfix">
+                        <input type="button" value="-" class="minus" />
+                        <input
+                          type="number"
+                          step="1"
+                          min="1"
+                          name="quantity"
+                          value="1"
+                          title="Qty"
+                          class="qty"
+                        />
+                        <input type="button" value="+" class="plus" />
+                      </div>
+                      <button
+                        type="submit"
+                        class="add-to-cart button button-large m-0"
+                      >
+                        Thêm vào giỏ
+                      </button>
+                    </form>
+                    <div class="line line-sm"></div>
+                    <div
+                      data-readmore="true"
+                      data-readmore-size="200px"
+                      data-readmore-trigger-open="Xem thêm <i class='icon-angle-down'></i>"
+                      data-readmore-trigger-close="Thu gọn <i class='icon-angle-up'></i>"
+                    >
+                      <div ng-bind-html="product.description">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Vel, reprehenderit. Earum omnis nesciunt, rerum
+                          hic ducimus quis doloremque ex labore nobis corporis
+                          soluta at eligendi accusantium dolores excepturi
+                          consectetur vero. Ratione cumque ab earum rerum sed
+                          voluptate facere! Veritatis modi quae illum eveniet
+                          omnis deleniti dolorem, numquam sequi tenetur
+                          voluptates? Similique, maiores! Eos nesciunt eum earum
+                          asperiores harum minima unde. Temporibus ab fugiat
+                          dolor, nemo rem ipsam cum repellat magni voluptatum
+                          molestias deleniti debitis aut ea sed ullam voluptas
+                          cupiditate vero recusandae labore soluta quaerat nisi,
+                          natus et. Aut, at? Possimus, ab quis impedit earum
+                          expedita saepe accusantium! Voluptas, perferendis quos
+                          a consequatur minima deserunt? Enim quos harum
+                          repudiandae atque minima aliquid quae est a temporibus
+                          officia, dolore eius neque? Repellat assumenda
+                          reprehenderit, rerum beatae blanditiis labore
+                          deserunt! Suscipit illo cupiditate repudiandae dolorum
+                          quidem laboriosam, ex fugiat, enim dicta dolor, aut
+                          consequuntur fuga distinctio quasi. Fuga magnam
+                          nostrum enim neque.
+                        </p>
+                      </div>
+                      <a
+                        href="#"
+                        class="btn btn-dark btn-sm read-more-trigger"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../include/js/jquery.js"></script>
+    <script src="../include/js/plugins.min.js"></script>
+
+    <script src="../include/js/functions.js"></script>
+  </body>
+</html>
