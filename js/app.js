@@ -7,8 +7,7 @@ myApp.config(function($routeProvider){
     })
     // :slug để làm url unique và đẹp hơn
     .when("/product/:slug", {
-      templateUrl: "product.html",
-      controller: "myController",
+      templateUrl: "../views/product.single.html"
     })
     //khởi tạo mặc định chạy trang home
     .otherwise({
