@@ -35,6 +35,11 @@
         <div class="content-wrap">
           <div class="container">
             <div class="row gutter-50 mb-3">
+              <div class="section center bg-transparent mb-0">
+                <h1 class="fw-bold">
+                  <a href="../pages/collections/features">Sản phẩm nổi bật</a>
+                </h1>
+              </div>
               <div ng-repeat="product in products |orderBy: '-discount' | limitTo:12 " ng-show="product.price != product.orginalPrice"
                 class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100"
               >
