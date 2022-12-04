@@ -48,21 +48,26 @@
                       enctype="multipart/form-data"
                     >
                       <div class="quantity clearfix">
-                        <input type="button" value="-" class="minus" />
+                        <!-- Giảm quantity -->
+                        <input type="button" value="-" class="minus" ng-click="minusQuantity()" />
+                        <!-- Số lượng -->
+                        
                         <input
                           type="number"
-                          step="1"
                           min="1"
                           name="quantity"
-                          value="1"
                           title="Qty"
                           class="qty"
+                          ng-model="cartItem.quantity"
                         />
-                        <input type="button" value="+" class="plus" />
+                        <!-- Tăng quantity -->
+                        <input type="button" value="+" class="plus" ng-click="plusQuantity()" />
                       </div>
+                      <!-- Button thêm vào giỏ -->
                       <button
                         type="submit"
                         class="add-to-cart button button-large m-0"
+                        ng-click="addToCart(product)"
                       >
                         Thêm vào giỏ
                       </button>
@@ -74,7 +79,9 @@
                       data-readmore-trigger-open="Xem thêm <i class='icon-angle-down'></i>"
                       data-readmore-trigger-close="Thu gọn <i class='icon-angle-up'></i>"
                     >
+                    {{cartItem.quantity}}
                       <div ng-bind-html="product.description">
+                        
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Vel, reprehenderit. Earum omnis nesciunt, rerum
