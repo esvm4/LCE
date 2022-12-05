@@ -111,7 +111,7 @@
                         <div class="col-12 form-group text-center">
                           <button class="btn btn-danger w-100 mb-3">Đăng nhập</button>
                           <h6 class="fw-medium">
-                            Khách hàng mới? <a href="../pages/register"><u>Đăng ký</u></a>
+                            Khách hàng mới? <a href="#/register"><u>Đăng ký</u></a>
                           </h6>
                         </div>
                       </form>
@@ -147,30 +147,30 @@
                 <div id="top-cart" class="header-misc-icon d-none d-sm-block">
                   <a href="#" id="top-cart-trigger"
                     ><i class="icon-line-bag"></i
-                    ><span class="top-cart-number">5</span></a
+                    ><span class="top-cart-number">{{cartQuantity}}</span></a
                   >
                   <div class="top-cart-content">
                     <div class="top-cart-title">
                       <h4>Giỏ hàng</h4>
                     </div>
                     <div class="top-cart-items">
-                      <div class="top-cart-item">
+                      <div class="top-cart-item" ng-repeat="item in cart">
                         <div class="top-cart-item-image">
                           <a href="#"
-                            ><img src="../imgs/product1.jpg" alt="Pr1"
+                            ><img src={{item.product.image}} alt="Pr1"
                           /></a>
                         </div>
                         <div class="top-cart-item-desc">
                           <div class="top-cart-item-desc-title">
-                            <a href="#">Product 1</a>
+                            <a href="#">{{item.product.name}}</a>
                             <span class="top-cart-item-price d-block">
-                              12 300 400</span
+                              {{item.product.price}}</span
                             >
                           </div>
-                          <div class="top-cart-item-quantity">x 2</div>
+                          <div class="top-cart-item-quantity">x {{item.quantity}}</div>
                         </div>
                       </div>
-                      <div class="top-cart-item">
+                      <!-- <div class="top-cart-item">
                         <div class="top-cart-item-image">
                           <a href="#"
                             ><img src="../imgs/product2.jpg" alt="Pr2"
@@ -185,10 +185,10 @@
                           </div>
                           <div class="top-cart-item-quantity">x 3</div>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="top-cart-action">
-                      <span class="top-checkout-price"> 54 600 800 </span>
+                      <span class="top-checkout-price"> {{cartValue}} </span>
                       <a href="#" class="button button-3d button-small m-0"></a>
                         Xem giỏ hàng
                       </a>
@@ -217,7 +217,7 @@
                   </li>
 
                   <li class="menu-item">
-                    <a class="menu-link" href="../pages/products.html">
+                    <a class="menu-link" href="#/products">
                       <div>Sản phầm <i class="icon-angle-down"> </i></div>
                     </a>
                     <ul class="sub-menu-container">

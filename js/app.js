@@ -1,10 +1,18 @@
 var myApp = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 
-myApp.config(function($routeProvider){
+myApp.config(function($routeProvider,$locationProvider){
   
+  $locationProvider.hashPrefix('');
+
   $routeProvider
     .when('/',{
         templateUrl: '../views/index.product.html'
+    })
+    .when('/products',{
+      templateUrl: '../views/index.product.html'
+    })
+    .when('/register',{
+      templateUrl: '../views/register.html'
     })
     // :slug để làm url unique và đẹp hơn
     .when("/product/:slug", {
@@ -45,14 +53,16 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     // Hàm khi thêm sản phẩm vào
     $rootScope.addToCart= function(product){
       $rootScope.cartItem.product = product;
-      $rootScope.cartItem.total = product.price * $rootScope.cartItem.quantity;
+      $rootScope.cartItem.totalPrice = product.price * $rootScope.cartItem.quantity;
+      $rootScope.cartQuantity+=$rootScope.cartItem.quantity;
+      $rootScope.cartValue+=$rootScope.cartItem.totalPrice;
       if ($rootScope.cart.length>0){
         var count=0;
         for (var i =0; i<$rootScope.cart.length;i++){
           if($rootScope.cart[i].product==product){
             $rootScope.cart[i].quantity+=$rootScope.cartItem.quantity;
-            $rootScope.cart[i].total=product.price * $rootScope.cart[i].quantity;
-            count++;  
+            $rootScope.cart[i].totalPrice=product.price * $rootScope.cart[i].quantity;
+            count++;
           }  
         };
         if(count==0){
@@ -69,7 +79,8 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $rootScope.cartItem={"quantity":1};
     $rootScope.cartItemCopy={};
     $rootScope.cart=[];
-
+    $rootScope.cartQuantity=0;
+    $rootScope.cartValue=0;
     
     
 })
