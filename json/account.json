@@ -1,0 +1,12 @@
+{
+    "accounts": [
+      {
+        "firstname":"Phi",
+        "lastname":"Tran",
+        "dateOfBirth":"2001-12-02T17:00:00.000Z",
+        "gender":"Nam",
+        "email":"phi@gmail.com",
+        "password":"phi"
+      }
+    ]
+}
