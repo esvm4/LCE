@@ -1286,9 +1286,25 @@ a.h-text-dark:hover {
   .px-xl-6 {
     padding-left: 5rem !important;
   }
-  .box-banner-info {
-    width: 80%;
-    z-index: 4;
+  .banner {
+    position: relative;
+  }
+  .banner-info {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .banner-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .banner-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 @media (min-width: 1400px) {
