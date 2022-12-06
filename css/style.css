@@ -1,6 +1,6 @@
 @font-face {
   font-family: Quicksand;
-  src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -77,7 +77,7 @@ ul {
 body {
   line-height: 1.5;
   color: #555;
-  font-family: 'Quicksand', sans-serif!important;
+  font-family: "Quicksand", sans-serif !important;
 }
 a {
   text-decoration: none !important;
@@ -107,7 +107,7 @@ h6 {
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px;
-  font-family: 'Quicksand', sans-serif!important;
+  font-family: "Quicksand", sans-serif !important;
 }
 h5,
 h6 {
@@ -174,7 +174,7 @@ ul {
   margin-bottom: 30px;
 }
 small {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 @media (max-width: 1200px) {
   .display-1 {
@@ -346,10 +346,10 @@ span.middot {
   line-height: 0 !important;
 }
 .font-body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .font-primary {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .font-secondary {
   font-family: "pt serif", serif;
@@ -1241,6 +1241,11 @@ a.h-text-dark:hover {
   .px-lg-6 {
     padding-left: 5rem !important;
   }
+  .info-content {
+    padding: 100px 15px;
+    max-width: 80%;
+    margin: auto;
+  }
 }
 @media (min-width: 1200px) {
   .m-xl-6 {
@@ -1280,6 +1285,10 @@ a.h-text-dark:hover {
   .ps-xl-6,
   .px-xl-6 {
     padding-left: 5rem !important;
+  }
+  .box-banner-info {
+    width: 80%;
+    z-index: 4;
   }
 }
 @media (min-width: 1400px) {
@@ -2779,7 +2788,7 @@ html[xmlns] .slider-wrap {
 #logo a {
   width: 100%;
   color: #000;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 36px;
 }
 #logo img {
@@ -2956,7 +2965,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .menu-link span {
   display: none;
@@ -2992,7 +3001,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   font-weight: 400;
   color: #666;
   letter-spacing: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .sub-menu-container .menu-item:hover > .menu-link {
   font-weight: 700;
@@ -3389,7 +3398,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   .mega-menu-style-2 .mega-menu-title > .menu-link {
     font-size: 13px;
     font-weight: 700;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase !important;
     margin-bottom: 15px;
@@ -4034,7 +4043,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   color: #333;
   font-weight: 700;
   margin-top: 0 !important;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   letter-spacing: 2px;
 }
 @media (min-width: 992px) {
@@ -4045,7 +4054,9 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
   .full-header .top-search-form input {
     padding-left: 30px;
   }
-  .transparent-header:not(.sticky-header):not(.full-header):not(.floating-header)
+  .transparent-header:not(.sticky-header):not(.full-header):not(
+      .floating-header
+    )
     .top-search-form
     input {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
@@ -6440,7 +6451,7 @@ body:not(.device-touch) .portfolio {
   padding: 30px 0;
   text-align: center;
   color: #444;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 24px;
@@ -6590,7 +6601,7 @@ body:not(.device-touch) .entry-link {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 @media (min-width: 992px) {
   .postcontent .post-timeline::before {
@@ -6863,7 +6874,7 @@ img.alignright {
 .wp-caption {
   text-align: center;
   margin: 10px 20px 13px;
-  font-family: 'Quicksand', Georgia, times new roman, Times, serif;
+  font-family: "Quicksand", Georgia, times new roman, Times, serif;
   font-style: italic;
 }
 .wp-caption img,
@@ -6926,6 +6937,7 @@ p.wp-caption-text {
 .product .product-image {
   position: relative;
   overflow: hidden;
+  height: 174px;
 }
 .product-image .slide a,
 .product-image img,
@@ -6954,6 +6966,7 @@ body:not(.device-touch):not(.device-sm):not(.device-xs) .product-image > a {
 }
 .product-title {
   margin-bottom: 7px;
+  height: 50px;
 }
 .product-title h3 {
   margin: 0;
@@ -7495,7 +7508,7 @@ body:not(.device-touch) .button {
   font-size: 20px;
   height: auto;
   line-height: 1;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .button.button-desc span {
   display: block;
@@ -8144,7 +8157,7 @@ body:not(.device-touch) .button.button-full strong {
 .fbox-content h3 {
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   margin-bottom: 0;
   color: #333;
@@ -8362,7 +8375,7 @@ body:not(.device-touch) .button.button-full strong {
 }
 .fbox-center.fbox-italic p {
   font-style: italic;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .fbox-bg.fbox-center {
   margin-top: 2rem;
@@ -9833,7 +9846,7 @@ body:not(.device-touch) .social-icon i {
 .tab-nav-lg li a {
   display: inline-block;
   color: #444;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -10545,7 +10558,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 .counter {
   font-size: 42px;
   font-weight: 600;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .counter.counter-small {
   font-size: 28px;
@@ -10656,7 +10669,7 @@ body:not(.device-touch) .rounded-skill {
 }
 .skills li .progress-percent .counter {
   font-weight: 400;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .progress-percent::after,
 .progress-percent::before {
@@ -11560,7 +11573,7 @@ label {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #555;
@@ -12654,7 +12667,7 @@ body:not(.device-touch) .tagcloud a {
 .widget-filter-links li a {
   display: block;
   color: #444;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 .widget-filter-links li span {
@@ -12704,7 +12717,7 @@ body:not(.device-touch) .tagcloud a {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .nav-tree li i {
   font-size: 14px;
@@ -12736,7 +12749,7 @@ body:not(.device-touch) .tagcloud a {
   font-size: 12px;
   padding: 6px 0;
   letter-spacing: 1px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .nav-tree ul ul a i.icon-angle-down {
   font-size: 12px;
@@ -12758,7 +12771,7 @@ body:not(.device-touch) .tagcloud a {
   line-height: 1;
   font-size: 80px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .wedding-head .and,
 .wedding-head .first-name,
