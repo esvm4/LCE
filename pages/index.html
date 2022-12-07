@@ -17,8 +17,7 @@
 </head>
 
 <body ng-controller="myController">
-    <!-- Giữ cố định header bằng ng-include -->
-    <!-- <header ng-include src="'../views/header.html'"></header> -->
+    
     <header>
         
 
@@ -354,12 +353,15 @@
   
 
     </header>
-    
-    
     {{login}}
+    <banner ng-include="'../views/banner.html'"></banner>
+    <brand ng-include="'../views/index.branding.html'" ></brand>
+    
     <main ng-view ></main>
-    <!-- <div ng-include="'../views/index.gallery.html'"></div> -->
-    <!-- <footer></footer> -->
+    <gallery ng-include="'../views/index.gallery.html'"></gallery>
+    <aboutus ng-include="'../views/index.aboutus.html'"></aboutus>
+    <client ng-include="'../views/index.clients.html'"></client>
+    <footer ng-include="'../views/footer.html'"></footer>
     
 </body>
 </html>
