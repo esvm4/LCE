@@ -534,11 +534,6 @@ span.middot {
   font-size: 15px;
   font-weight: 400;
   padding: 12px 20px;
-  border-color: #e00707;
-}
-
-.sidebox-order_action .btncart-checkout:before {
-  background-color: #e00707;
 }
 
 .link-continue {
