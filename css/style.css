@@ -444,6 +444,112 @@ span.middot {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
+.checkout-note textarea {
+  border-radius: 0;
+  background: #ededed;
+  color: #2e2e2e;
+  font-size: 15px;
+  padding: 20px 15px;
+  outline: none;
+  width: 100% !important;
+  min-height: 130px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 150ms linear;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.checkout-note textarea:focus {
+  border: 1px solid #bb7944;
+}
+
+.checkout-policy ul li {
+  display: block;
+  line-height: 25px;
+  position: relative;
+  padding-left: 20px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.checkout-policy ul li:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  content: "\f178";
+  font-size: 10px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  /* transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s; */
+}
+
+.sidebox-order {
+  background: #fff;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #e1e3e4;
+  border-radius: 2px;
+}
+
+.sidebox-order div[class^="sidebox-order_"] {
+  margin-bottom: 15px;
+}
+
+.sidebox-order_title h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.sidebox-order_total p {
+  margin: 0;
+}
+
+.sidebox-order_total p .total-price {
+  float: right;
+  color: red;
+  font-size: 24px;
+}
+
+.sidebox-order_total p {
+  margin: 0;
+}
+
+.sidebox-order div[class^="sidebox-order_"]:last-child {
+  margin-bottom: 0px;
+}
+
+.sidebox-order_action .btncart-checkout {
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px 20px;
+  border-color: #e00707;
+}
+
+.sidebox-order_action .btncart-checkout:before {
+  background-color: #e00707;
+}
+
+.link-continue {
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.link-continue a {
+  color: #bb7944;
+}
+
 @-webkit-keyframes BgAnimated {
   from {
     background-position: 0 0;
@@ -8751,6 +8857,15 @@ body:not(.device-touch) .button.button-full strong {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   font-style: normal;
+}
+.btn-checkout {
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 12px 20px;
+  border-color: #e00707;
 }
 body:not(.device-touch) .i-bordered,
 body:not(.device-touch) .i-circled,
