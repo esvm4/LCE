@@ -171,7 +171,7 @@
                     </div>
                     <div class="top-cart-action">
                       <span class="top-checkout-price"> {{cartValue}} </span>
-                      <a href="#" class="button button-3d button-small m-0">Xem giỏ hàng</a>
+                      <a href="#/cart" class="button button-3d button-small m-0">Xem giỏ hàng</a>
                         
                       </a>
                     </div>
@@ -354,14 +354,11 @@
 
     </header>
     {{login}}
-    <banner ng-include="'../views/banner.html'"></banner>
-    <brand ng-include="'../views/index.branding.html'" ></brand>
+    
     
     <main ng-view ></main>
-    <gallery ng-include="'../views/index.gallery.html'"></gallery>
-    <aboutus ng-include="'../views/index.aboutus.html'"></aboutus>
-    <client ng-include="'../views/index.clients.html'"></client>
     <footer ng-include="'../views/footer.html'"></footer>
+    
     
 </body>
 </html>

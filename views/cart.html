@@ -21,7 +21,7 @@
             <div class="heading-block text-center">
               <h1 class="fw-bold my-0">Giỏ hàng của bạn</h1>
               <p>
-                Có <span class="fw-bold">{cart.amount} sản phẩm </span> trong giỏ hàng
+                Có <span class="fw-bold">{{cartQuantity}} sản phẩm </span> trong giỏ hàng
               </p>
             </div>
             <div class="row">
@@ -39,7 +39,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="cart_item" ng-repeat="">
+                      <tr class="cart_item" ng-repeat="item in cart">
                         <td class="cart-product-remove">
                           <a href="#" class="remove" title="Xoá sản phẩm"
                             > <i class="icon-trash2"> </i
@@ -50,15 +50,15 @@
                             <img
                               width="64"
                               height="64"
-                              src="{{product.variableLink}}"
-                              alt="{{product.slug}}"
+                              src={{item.product.image}}
+                              alt="{{item.product.slug}}"
                           /></a>
                         </td>
                         <td class="cart-product-name">
-                          <a href="#">{{product.name}}</a>
+                          <a href="#">{{item.product.name}}</a>
                         </td>
                         <td class="cart-product-price">
-                          <span><del>{{product.originalPrice}}₫</del> <br>{{product.price}}₫</span>
+                          <span><del>{{item.product.originalPrice}}₫</del> <br>{{item.product.price}}₫</span>
                         </td>
                         <td class="cart-product-quantity">
                           <div class="quantity">
@@ -66,14 +66,14 @@
                             <input
                               type="text"
                               name="quantity"
-                              value="{{product.quantity}}"
+                              value="{{item.quantity}}"
                               class="qty"
                             />
                             <input type="button" value="+" class="plus" />
                           </div>
                         </td>
                         <td class="cart-product-subtotal">
-                          <span>{{????}}</span>
+                          <span>{{item.totalPrice}}</span>
                         </td>
                       </tr>
                     </tbody>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="sidebox-order_total">
                       <p>Tổng tiền:
-                        <span class="total-price">{{cart.total}}₫</span>
+                        <span class="total-price">{{cartValue}}₫</span>
                       </p>
                     </div>
                     <div class="sidebox-order_text">
