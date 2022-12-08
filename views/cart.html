@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
+
+    <title>cart</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <section id="content">
+        <div class="content-wrap">
+          <div class="container">
+            <div class="heading-block text-center">
+              <h1 class="fw-bold my-0">Giỏ hàng của bạn</h1>
+              <p>
+                Có <span class="fw-bold">{cart.amount} sản phẩm </span> trong giỏ hàng
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <table class="table cart mb-5">
+                    <thead>
+                      <tr>
+                        <th class="cart-product-remove">&nbsp;</th>
+                        <th class="cart-product-thumbnail">&nbsp;</th>
+                        <th class="cart-product-name color"> Sản phẩm</th>
+                        <th class="cart-product-price color">Đơn giá</th>
+                        <th class="cart-product-quantity color">Số lượng</th>
+                        <th class="cart-product-subtotal color">Tổng</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="cart_item" ng-repeat="">
+                        <td class="cart-product-remove">
+                          <a href="#" class="remove" title="Xoá sản phẩm"
+                            > <i class="icon-trash2"> </i
+                          > </a>
+                        </td>
+                        <td class="cart-product-thumbnail">
+                          <a href="../pages/collections/{{product.slug}}"></a>
+                            <img
+                              width="64"
+                              height="64"
+                              src="{{product.variableLink}}"
+                              alt="{{product.slug}}"
+                          /></a>
+                        </td>
+                        <td class="cart-product-name">
+                          <a href="#">{{product.name}}</a>
+                        </td>
+                        <td class="cart-product-price">
+                          <span><del>{{product.originalPrice}}₫</del> <br>{{product.price}}₫</span>
+                        </td>
+                        <td class="cart-product-quantity">
+                          <div class="quantity">
+                            <input type="button" value="-" class="minus" />
+                            <input
+                              type="text"
+                              name="quantity"
+                              value="{{product.quantity}}"
+                              class="qty"
+                            />
+                            <input type="button" value="+" class="plus" />
+                          </div>
+                        </td>
+                        <td class="cart-product-subtotal">
+                          <span>{{????}}</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row gutter-50 ">
+                  <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="checkout-note">
+                      <h5 class="mb-2">Ghi chú đơn hàng</h5>
+                      <div class="checkout-note clearfix">
+                        <textarea id="note" name="note" rows="4" placeholder="Ghi chú"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-sm-12 col-xs-12 d-none d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block">
+                    <div class="checkout-policy">
+                      <h5 class="mb-2">Chính sách mua hàng</h5>
+                      <ul >
+                        <li>Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.</li>
+                        <li>Sản phẩm còn đủ tem mác, chưa qua sử dụng.</li>
+                        <li>Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống</li>
+                        <li>Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 sidebarCart-sticky">
+                <div class="sidebox-order">
+                  <div class="sidebox-order-inner">
+                    <div class="sidebox-order_title">
+                      <h3>Thông tin đơn hàng</h3>
+                    </div>
+                    <div class="sidebox-order_total">
+                      <p>Tổng tiền:
+                        <span class="total-price">{{cart.total}}₫</span>
+                      </p>
+                    </div>
+                    <div class="sidebox-order_text">
+                      <p>Phí vận chuyển sẽ được tính ở trang thanh toán.<br>
+                        Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>
+                        <div class="sidebox-order_action text-center">
+                          <a class="button btncart-checkout text-uppercase">Thanh toán</a>
+                          <p class="link-continue">
+                            <a href="../pages/collections/all">
+                              <i class="icon-reply1"> </i> Tiếp tục mua hàng
+                            </a>
+                          </p>
+                        </div>
+                  </div>
+                </div>
+              
+                <div class="sidebox-group sidebox-policy d-block d-sm-none d-md-none d-lg-none d-xl-none d-xxl-none">
+                  <h4>Chính sách mua hàng</h4>
+                  <ul>
+                    <li>Sản phẩm được đổi 1 lần duy nhất, không hỗ trợ trả.</li>
+                    <li>Sản phẩm còn đủ tem mác, chưa qua sử dụng.</li>
+                    <li>Sản phẩm nguyên giá được đổi trong 30 ngày trên toàn hệ thống</li>
+                    <li>Sản phẩm sale chỉ hỗ trợ đổi size (nếu cửa hàng còn) trong 7 ngày trên toàn hệ thống.</li>
+                  </ul>
+                </div>
+              
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

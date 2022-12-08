@@ -1,11 +1,12 @@
+
 var myApp = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 
 myApp.config(function($routeProvider,$locationProvider){
   
   $locationProvider.hashPrefix('');
-
+  // $locationProvider.html5Mode(true);
   $routeProvider
-    .when('/',{
+    .when('/home',{
         templateUrl: '../views/index.product.html'
     })
     .when('/products',{
@@ -16,18 +17,23 @@ myApp.config(function($routeProvider,$locationProvider){
     })
     // :slug để làm url unique và đẹp hơn
     .when("/product/:slug", {
-      templateUrl: "../views/product.single.html"
+      templateUrl: "../views/collections.single.html"
     })
     //khởi tạo mặc định chạy trang home
     .otherwise({
-      redirectTo: "/",
+      redirectTo: "/home",
     });
 });
 myApp.controller("myController",function myController($rootScope, $scope, $location, $http) {
     // test
+    $rootScope.cartItem={"quantity":1};
+    $rootScope.cartItemCopy={};
+    $rootScope.cart=[];
+    $rootScope.cartQuantity=0;
+    $rootScope.cartValue=0;
     
-
     $scope.login={};
+    
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){
         $scope.products=response.data.products;
@@ -75,14 +81,8 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         $rootScope.cartItemCopy = Object.assign({}, $rootScope.cartItem);
         $rootScope.cart.push($rootScope.cartItemCopy);
       }
-    };
-    $rootScope.cartItem={"quantity":1};
-    $rootScope.cartItemCopy={};
-    $rootScope.cart=[];
-    $rootScope.cartQuantity=0;
-    $rootScope.cartValue=0;
-    
-    
+    };   
 })
+
 
 

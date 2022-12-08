@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+    <!-- <base href="/" >  -->
     <script src="../js/angular.min.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/angular-route.min.js" ></script>
@@ -18,8 +17,7 @@
 </head>
 
 <body ng-controller="myController">
-    <!-- Giữ cố định header bằng ng-include -->
-    <!-- <header ng-include="'../views/header.html'"></header> -->
+    
     <header>
         
 
@@ -307,6 +305,7 @@
                   value=""
                   placeholder="Nhập tìm kiếm sản phẩm &amp; nhấn Enter..."
                   autocomplete="off"
+                  ng-model="search"
                 />
               </form>
             </div>
@@ -320,31 +319,19 @@
     <script src="../include/js/plugins.min.js"></script>
     <script src="../include/js/functions.js"></script>
 
-    <script src="../include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="../include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
-      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
-      data-cf-beacon='{"rayId":"770fd2c5a9100998","token":"0627f0b8b73941069bc19139e63db853","version":"2022.11.3","si":100}'
-      crossorigin="anonymous"
-    ></script>
-    
   </div>
   
 
     </header>
     {{login}}
+    <banner ng-include="'../views/banner.html'"></banner>
+    <brand ng-include="'../views/index.branding.html'" ></brand>
+    
     <main ng-view ></main>
-    <!-- <footer></footer> -->
+    <gallery ng-include="'../views/index.gallery.html'"></gallery>
+    <aboutus ng-include="'../views/index.aboutus.html'"></aboutus>
+    <client ng-include="'../views/index.clients.html'"></client>
+    <footer ng-include="'../views/footer.html'"></footer>
     
 </body>
 </html>
