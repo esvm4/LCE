@@ -7,7 +7,7 @@ myApp.config(function($routeProvider,$locationProvider){
   // $locationProvider.html5Mode(true);
   $routeProvider
     .when('/home',{
-        templateUrl: '../views/index.product.html'
+        templateUrl: '../views/home.html'
     })
     .when('/products',{
       templateUrl: '../views/index.product.html'
@@ -18,6 +18,9 @@ myApp.config(function($routeProvider,$locationProvider){
     // :slug để làm url unique và đẹp hơn
     .when("/product/:slug", {
       templateUrl: "../views/collections.single.html"
+    })
+    .when("/cart", {
+      templateUrl: "../views/cart.html"
     })
     //khởi tạo mặc định chạy trang home
     .otherwise({
