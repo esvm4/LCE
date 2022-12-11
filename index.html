@@ -48,7 +48,7 @@
                   <li class="top-links-item">
                     <a href=""> Đăng nhập <i class="icon-angle-down"> </i> </a>
                     <div class="top-links-section menu-pos-invert">
-                      <form id="top-login" autocomplete="off">
+                      <form id="top-login" autocomplete="off" ng-submit="authen()()">
                         <div class="form-group col-12">
                           <label>Email </label>
                           
@@ -56,7 +56,7 @@
                             type="email"
                             class="form-control"
                             placeholder=" Địa chỉ email"
-                            ng-model="login.account"
+                            ng-model="login.email"
                           />
                         </div>
                         <div class="form-group col-12">
@@ -84,17 +84,18 @@
                           </label>
                         </div>
                         <div class="col-12 form-group text-center">
-                          <button class="btn btn-danger w-100 mb-3">Đăng nhập</button>
+                          <button class="btn btn-danger w-100 mb-3" ng-click="authen()">Đăng nhập</button>
                           <h6 class="fw-medium">
                             Khách hàng mới? <a href="#/register"><u>Đăng ký</u></a>
                           </h6>
                         </div>
+                        <input type="submit" hidden />
                       </form>
                     </div>
                   </li>
                   <li class="top-links-item">
                       <li><img src="https://cdn-icons-png.flaticon.com/512/1864/1864640.png" alt="cat icon" style="width: 1rem;"></li>
-                      <p class="m-0 mx-1 align-middle fw-bold">{{account.firstname}}</p>
+                      <p class="m-0 mx-1 align-middle fw-bold">{{login.email}}</p>
                     </li>
                 </ul>
               </div>
@@ -303,7 +304,7 @@
                   </li>
 
                   <li class="menu-item">
-                    <a class="menu-link" href="#"> <div>Blog</div> </a>
+                    <a class="menu-link" href="#/blog"> <div>Blog</div> </a>
                   </li>
 
                   <li class="menu-item">
@@ -311,17 +312,20 @@
                   </li>
                 </ul>
               </nav>
-              <form class="top-search-form" method="get">
+              <form class="top-search-form" method="get" ng-submit="searchKey()">
                 <input
                   type="text"
                   name="q"
                   class="form-control"
-                  value=""
                   placeholder="Nhập tìm kiếm sản phẩm &amp; nhấn Enter..."
                   autocomplete="off"
                   ng-model="search"
+                  
+                  
                 />
+                <input type="submit" hidden />
               </form>
+
             </div>
           </div>
         </div>

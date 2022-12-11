@@ -48,6 +48,15 @@ myApp.config(function($routeProvider,$locationProvider){
     .when("/cart", {
       templateUrl: "../views/cart.html"
     })
+    .when("/blog", {
+      templateUrl: "../views/blog.all.html"
+    })
+    .when("/blog1", {
+      templateUrl: "../views/blog1.html"
+    })
+    .when("/blog2", {
+      templateUrl: "../views/blog2.html"
+    })
     //khởi tạo mặc định chạy trang home
     .otherwise({
       redirectTo: "/",
@@ -65,11 +74,14 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $rootScope.cartValue=0;
     $scope.login={};
     $scope.rangePrice=9999999;
-    
+    $scope.search="";
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){
         $scope.products=response.data.products;
     });
+    $http.get('../json/account.json').then(function(response){
+      $scope.accounts=response.data.accounts;
+  });
     // Hàm khi click vào sản phẩm
     $scope.productClick = function (product) {
       $location.path("/product/" + product.slug);
@@ -81,6 +93,11 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $location.path("/collections/"+category);
       $scope.category=category;
 
+    }
+    $scope.searchKey = function(){
+      if($scope.search != ""){
+        $location.path("/all");
+      }
     }
     // Hàm tăng số lượng sản phẩm
     $rootScope.plusQuantity =function(){
@@ -118,7 +135,39 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         $rootScope.cartItemCopy = Object.assign({}, $rootScope.cartItem);
         $rootScope.cart.push($rootScope.cartItemCopy);
       }
+      
     };   
+    $scope.remove=function(item){
+      let removeItem = $rootScope.cart.indexOf(item)
+      $rootScope.cart.splice(removeItem,1);
+      $rootScope.cartQuantity-=item.quantity;
+      $rootScope.cartValue-=item.totalPrice;
+    }
+    $scope.plusInCart=function(item){
+      let index = $rootScope.cart.indexOf(item)
+      $rootScope.cart[index].quantity++;
+      $rootScope.cart[index].totalPrice+=$rootScope.cart[index].product.price*1;
+      $rootScope.cartQuantity++;
+      $rootScope.cartValue+=$rootScope.cart[index].product.price*1;
+    }
+    $scope.minusInCart=function(item){
+      let index = $rootScope.cart.indexOf(item)
+      if($rootScope.cart[index].quantity>1){
+        $rootScope.cart[index].quantity--;
+        $rootScope.cart[index].totalPrice-=$rootScope.cart[index].product.price*1;
+        $rootScope.cartQuantity--;
+        $rootScope.cartValue-=$rootScope.cart[index].product.price*1;
+      }
+      
+    }
+    $scope.authen =function(){
+      for (var i =0; i<$scope.accounts.length;i++){
+        if ($scope.accounts[i].email==$scope.login.email && $scope.accounts[i].password==$scope.login.password){
+          $scope.authen = true;
+        }
+      }
+      
+    }
 })
 
 

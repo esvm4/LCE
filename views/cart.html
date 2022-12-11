@@ -41,12 +41,12 @@
                     <tbody>
                       <tr class="cart_item" ng-repeat="item in cart">
                         <td class="cart-product-remove">
-                          <a href="#" class="remove" title="Xoá sản phẩm"
+                          <a href="" class="remove" title="Xoá sản phẩm" ng-click="remove(item)"
                             > <i class="icon-trash2"> </i
                           > </a>
                         </td>
                         <td class="cart-product-thumbnail">
-                          <a href="../pages/collections/{{product.slug}}"></a>
+                          <a href="" ng-click="productClick(item.product)"></a>
                             <img
                               width="64"
                               height="64"
@@ -55,21 +55,21 @@
                           /></a>
                         </td>
                         <td class="cart-product-name">
-                          <a href="#">{{item.product.name}}</a>
+                          <a href="" ng-click="productClick(item.product)">{{item.product.name}}</a>
                         </td>
                         <td class="cart-product-price">
                           <span><del>{{item.product.originalPrice}}₫</del> <br>{{item.product.price}}₫</span>
                         </td>
                         <td class="cart-product-quantity">
                           <div class="quantity">
-                            <input type="button" value="-" class="minus" />
+                            <input type="button" value="-" class="minus" ng-click="minusInCart(item)" />
                             <input
                               type="text"
                               name="quantity"
-                              value="{{item.quantity}}"
+                              ng-model="item.quantity"
                               class="qty"
                             />
-                            <input type="button" value="+" class="plus" />
+                            <input type="button" value="+" class="plus" ng-click="plusInCart(item)"/>
                           </div>
                         </td>
                         <td class="cart-product-subtotal">
