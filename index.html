@@ -7,6 +7,8 @@
     <!-- <base href="/" >  -->
     <script src="../js/angular.min.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/firebase.js"></script>
+
     <script src="../js/angular-route.min.js" ></script>
     <script src="../js/angular-sanitize.min.js" ></script>
 
@@ -14,7 +16,6 @@
 </head>
 
 <body ng-controller="myController">
-    
     <header>
         
 
@@ -105,10 +106,10 @@
           <div class="container">
             <div class="header-row">
               <div id="logo">
-                <a href="../pages/index.html" class="standard-logo"
+                <a href="#/home" class="standard-logo"
                   ><img src="../imgs/logo.png" alt="L'CE Logo"
                 /></a>
-                <a href="../pages/index.html" class="retina-logo"
+                <a href="#/home" class="retina-logo"
                   ><img src="../imgs/logo.png" alt="L'CE Logo"
                 /></a>
               </div>
@@ -171,20 +172,21 @@
               <nav class="primary-menu">
                 <ul class="menu-container">
                   <li class="menu-item current">
-                    <a class="menu-link" href="../pages/index.html">
+                    <a class="menu-link" href="#/home">
                       <div>Trang chủ</div>
                     </a>
                   </li>
 
                   <li class="menu-item">
-                    <a class="menu-link" href="#/products">
-                      <div>Sản phầm <i class="icon-angle-down"> </i></div>
+                    <a class="menu-link" href="#/all" >
+                      <div>Sản phẩm <i class="icon-angle-down"> </i></div>
                     </a>
                     <ul class="sub-menu-container">
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/tables"
+                          href=""
+                          ng-click="categoryClick('Bàn')"
                         >
                           <div>Bàn</div>
                         </a>
@@ -192,7 +194,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/chairs"
+                          href=""
+                          ng-click="categoryClick('Ghế')"
                         >
                           <div>Ghế</div>
                         </a>
@@ -200,20 +203,23 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/cabinets"
+                          href=""
+                          ng-click="categoryClick('Tủ')"
                         >
                           <div>Tủ</div>
                         </a>
                       </li>
                       <li class="menu-item">
-                        <a class="menu-link" href="../pages/products.html/beds">
+                        <a class="menu-link" href=""
+                        ng-click="categoryClick('Giường')">
                           <div>Giường</div>
                         </a>
                       </li>
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/shelves"
+                          href=""
+                          ng-click="categoryClick('Kệ')"
                         >
                           <div>Kệ</div>
                         </a>
@@ -222,9 +228,20 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/lamps"
+                          href=""
+                          ng-click="categoryClick('Đèn')"
                         >
                           <div>Đèn</div>
+                        </a>
+                      </li>
+
+                      <li class="menu-item">
+                        <a
+                          class="menu-link"
+                          href=""
+                          ng-click="categoryClick('Khác')"
+                        >
+                          <div>Khác</div>
                         </a>
                       </li>
                     </ul>
@@ -238,7 +255,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/bedroom"
+                          href=""
+                          ng-click="categoryClick('Phòng ngủ')"
                         >
                           <div>Phòng ngủ</div>
                         </a>
@@ -246,7 +264,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/living-room"
+                          href=""
+                          ng-click="categoryClick('Phòng khách')"
                         >
                           <div>Phòng khách</div>
                         </a>
@@ -254,7 +273,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/bathroom"
+                          href=""
+                          ng-click="categoryClick('Phòng tắm')"
                         >
                           <div>Phòng tắm</div>
                         </a>
@@ -262,7 +282,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/kitchen"
+                          href=""
+                          ng-click="categoryClick('Phòng bếp')"
                         >
                           <div>Phòng bếp</div>
                         </a>
@@ -270,7 +291,8 @@
                       <li class="menu-item">
                         <a
                           class="menu-link"
-                          href="../pages/products.html/garden"
+                          href=""
+                          ng-click="categoryClick('Sân vườn')"
                         >
                           <div>Sân vườn</div>
                         </a>
@@ -283,7 +305,7 @@
                   </li>
 
                   <li class="menu-item">
-                    <a class="menu-link" href="#"> <div>Giới thiệu</div> </a>
+                    <a class="menu-link" href="#/aboutus"> <div>Giới thiệu</div> </a>
                   </li>
                 </ul>
               </nav>
@@ -313,12 +335,8 @@
   
 
     </header>
-    {{login}}
-    
-    
-    <main ng-view ></main>
+    {{}}
+    <main ng-view autoscroll="true" ></main>
     <footer ng-include="'../views/footer.html'"></footer>
-    
-    
 </body>
 </html>

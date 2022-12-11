@@ -1,4 +1,3 @@
-
 var myApp = angular.module("myApp", ["ngRoute", "ngSanitize"]);
 
 myApp.config(function($routeProvider,$locationProvider){
@@ -9,11 +8,38 @@ myApp.config(function($routeProvider,$locationProvider){
     .when('/home',{
         templateUrl: '../views/home.html'
     })
+    .when('/',{
+      templateUrl: '../views/home.html'
+  })
     .when('/products',{
       templateUrl: '../views/index.product.html'
     })
+    .when('/collections/:slug',{
+      templateUrl: '../views/collections.all.html'
+    })
+    .when('/all',{
+      templateUrl: '../views/collections.all.html'
+    })
     .when('/register',{
       templateUrl: '../views/register.html'
+    })
+    .when('/aboutus',{
+      templateUrl: '../views/aboutus.html'
+    })
+    .when('/contact',{
+      templateUrl: '../views/contact.html'
+    })
+    .when('/search',{
+      templateUrl: '../views/search.html'
+    })
+    .when('/returnpolicy',{
+      templateUrl: '../views/returnpolicy.html'
+    })
+    .when('/privacypolicy',{
+      templateUrl: '../views/privacypolicy.html'
+    })
+    .when('/termofservice',{
+      templateUrl: '../views/termsofservice.html'
     })
     // :slug để làm url unique và đẹp hơn
     .when("/product/:slug", {
@@ -24,9 +50,12 @@ myApp.config(function($routeProvider,$locationProvider){
     })
     //khởi tạo mặc định chạy trang home
     .otherwise({
-      redirectTo: "/home",
+      redirectTo: "/",
     });
 });
+
+
+
 myApp.controller("myController",function myController($rootScope, $scope, $location, $http) {
     // test
     $rootScope.cartItem={"quantity":1};
@@ -34,8 +63,8 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $rootScope.cart=[];
     $rootScope.cartQuantity=0;
     $rootScope.cartValue=0;
-    
     $scope.login={};
+    
     
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){
@@ -46,8 +75,13 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $location.path("/product/" + product.slug);
       $rootScope.product = product;
       $rootScope.cartItem={"quantity":1};
-      console.log(login);
+      
     };
+    $scope.categoryClick = function(category){
+      $location.path("/collections/"+category);
+      $scope.category=category;
+
+    }
     // Hàm tăng số lượng sản phẩm
     $rootScope.plusQuantity =function(){
       $rootScope.cartItem.quantity++;
