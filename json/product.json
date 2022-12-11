@@ -10,7 +10,7 @@
       "originalPrice": "1250000",
       "discount": "29%",
       "image": "https://product.hstatic.net/200000316579/product/12-1_5316e032a8b0403b8fe26c4cd6bef167_35e9cf348a3b4df28059491ff6c6ff08_ea9b0c0d17764aecad61edd3ab655091.jpg",
-      "slug": "m-tra-inox-khong-gh"
+      "slug": "am-tra-inox-khong-gh"
     },
     {
       "name": "Bàn Anna chân gập",
@@ -381,7 +381,7 @@
       "originalPrice": "2100000",
       "discount": "5%",
       "image": "https://product.hstatic.net/200000316579/product/den-cay-pula-dc12-anh-sang-trang_5cc1749fcfa245b39162090f54be15dd.jpg",
-      "slug": "en-cay-pula-dc11"
+      "slug": "den-cay-pula-dc11"
     },
     {
       "name": "Đèn để bàn gọn nhẹ Petie",
@@ -394,7 +394,7 @@
       "discount": "0%",
       "image": "https://product.hstatic.net/200000316579/product/p8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_339c08be1989403faa527913bcf75214.jpg",
       "variableLink": "https://product.hstatic.net/200000316579/product/p8-1_5d1c7dc8e938478290333f2625515d68_28699549035a4a1e8823d70b9a6f8388_339c08be1989403faa527913bcf75214.jpg",
-      "slug": "en-ban-g-n-nh-petie"
+      "slug": "den-ban-g-n-nh-petie"
     },
     {
       "name": "Đèn đọc sách gắn tường dimmer LED 9w",
@@ -406,7 +406,7 @@
       "originalPrice": "2100000",
       "discount": "10%",
       "image": "https://product.hstatic.net/200000316579/product/led-5w-dimmer-dau-giuon-vsc1589345016_1c1c8681445f4e0aab2a7b9fd8c818ab_7dd22d5309e24e91a845c64d34f735b9.jpeg",
-      "slug": "en-c-sach-g-n-t-ng-dimmer-led-9w"
+      "slug": "den-c-sach-g-n-t-ng-dimmer-led-9w"
     },
     {
       "name": "Đèn ngủ/ đèn bàn cao cấp",
@@ -418,7 +418,7 @@
       "originalPrice": "5000000",
       "discount": "33%",
       "image": "https://product.hstatic.net/200000316579/product/28f202ca9c459eaa7614371e5d2dd6_grande_797c99e6188a4d208e6d65fc169d88d1_7ef1431fa02941acb952a059a462a2b6.jpg",
-      "slug": "en-ng-en-ban-cao-c-p"
+      "slug": "den-ng-en-ban-cao-c-p"
     },
     {
       "name": "Đèn ốp trần Sasa 5 cánh",
@@ -430,7 +430,7 @@
       "originalPrice": "1950000",
       "discount": "23%",
       "image": "https://product.hstatic.net/200000316579/product/den-op-tran-sasa-5-canh-large_edd2dd51e62f45c78d6e869fb3e24934_cf8d7a295f2f4be08163dc58fc2e1fa4.jpg",
-      "slug": "en-p-tr-n-sasa-5-canh"
+      "slug": "den-p-tr-n-sasa-5-canh"
     },
     {
       "name": "Đèn sân vườn ánh nến DV01",
@@ -442,7 +442,7 @@
       "originalPrice": "90000",
       "discount": "0%",
       "image": "https://product.hstatic.net/200000316579/product/sv4a_92c8c6c24b814092b01b9ffbbb1a8278.jpg",
-      "slug": "en-san-v-n-anh-n-n-dv01"
+      "slug": "den-san-v-n-anh-n-n-dv01"
     },
     {
       "name": "Đèn thả LYMOSE",
@@ -454,7 +454,7 @@
       "originalPrice": "2000000",
       "discount": "48%",
       "image": "https://product.hstatic.net/200000316579/product/d5c081225006c9aae0a7443a48dfa617_fe416e91a564431e9fcf3507ef5cc7ae.jpg",
-      "slug": "en-th-lymose"
+      "slug": "den-th-lymose"
     },
     {
       "name": "Đèn thả văn phòng TR-012",
@@ -466,7 +466,7 @@
       "originalPrice": "1850000",
       "discount": "19%",
       "image": "https://product.hstatic.net/200000316579/product/unnamed_7f617ef6dd6c4df99437d876657cfdbf.jpg",
-      "slug": "en-th-v-n-phong-tr-012"
+      "slug": "den-th-v-n-phong-tr-012"
     },
     {
       "name": "Đèn treo sang trọng Hubert",
@@ -478,7 +478,7 @@
       "originalPrice": "1360000",
       "discount": "12%",
       "image": "https://product.hstatic.net/200000316579/product/p4-2_97670563a9c9462e91b405158f85b77a_1e84319ca6f74a5fbe7043f038a05166_c2717543a2f04af197c4d126dcc794c5.jpg",
-      "slug": "en-treo-sang-tr-ng-hubert"
+      "slug": "den-treo-sang-tr-ng-hubert"
     },
     {
       "name": "Đèn treo trang trí sân vườn DV03",
@@ -491,7 +491,7 @@
       "discount": "0%",
       "image": "https://product.hstatic.net/200000316579/product/sv5d1_7ae7289c4874439f9ed5b10c0907e867.jpg",
       "variableLink": "https://product.hstatic.net/200000316579/product/sv5c_02d5fefb2e8c485497b3159e858eb4aa.jpg",
-      "slug": "en-treo-trang-tri-san-v-n-dv03"
+      "slug": "den-treo-trang-tri-san-v-n-dv03"
     },
     {
       "name": "Ghế ALUMINUM PLUS VP04",

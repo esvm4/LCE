@@ -18,7 +18,7 @@ myApp.config(function($routeProvider,$locationProvider){
       templateUrl: '../views/collections.all.html'
     })
     .when('/all',{
-      templateUrl: '../views/collections.all.html'
+      templateUrl: '../views/collections.html'
     })
     .when('/register',{
       templateUrl: '../views/register.html'
@@ -64,7 +64,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $rootScope.cartQuantity=0;
     $rootScope.cartValue=0;
     $scope.login={};
-    
+    $scope.rangePrice=9999999;
     
     // Gọi file json qua $http
     $http.get('../json/product.json').then(function(response){

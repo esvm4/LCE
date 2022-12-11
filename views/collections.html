@@ -35,7 +35,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
-                      checked
+                      ng-model="rangePrice"
+                      ng-value="500000"
                     />
                     <label for="radio-1" class="radio-style-1-label">
                       ≤ 500,000₫
@@ -48,6 +49,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
+                      ng-model="rangePrice"
+                      ng-value="1000000"
                     />
                     <label for="radio-2" class="radio-style-1-label">
                       ≤ 1,000,000₫
@@ -60,6 +63,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
+                      ng-model="rangePrice"
+                      ng-value="1500000"
                     />
                     <label for="radio-3" class="radio-style-1-label">
                       ≤ 1,500,000₫
@@ -72,6 +77,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
+                      ng-model="rangePrice"
+                      ng-value="2000000"
                     />
                     <label for="radio-4" class="radio-style-1-label">
                       ≤ 2,000,000₫
@@ -84,6 +91,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
+                      ng-model="rangePrice"
+                      ng-value="5000000"
                     />
                     <label for="radio-5" class="radio-style-1-label">
                       ≤ 5,000,000₫
@@ -96,6 +105,8 @@
                       class="radio-style"
                       name="radio-group-prices"
                       type="radio"
+                      ng-model="rangePrice"
+                      ng-value="-5000000"
                     />
                     <label for="radio-6" class="radio-style-1-label">
                       > 5,000,000₫
@@ -115,17 +126,17 @@
                 <!-- <div class="col-auto mb-4 d-flex">
                   <span class="bottommargin-sm mt-3">
                     <select class="form-select" style="width: 100%">
-                      <option value="increasing-price">Giá: Tăng dần</option>
-                      <option value="decreasing-price">Giá: Giảm dần</option>
-                      <option value="nameaz">Tên: A-Z</option>
-                      <option value="nameza">Tên: Z-A</option>
-                      <option value="decreasing-inventory">Tồn kho: Giảm dần</option>
+                      <option ng-model='order' value="price">Giá: Tăng dần</option>
+                      <option ng-model='order' value="-price">Giá: Giảm dần</option>
+                      <option ng-model='order' value="slug">Tên: A-Z</option>
+                      <option ng-model='order' value="-slug">Tên: Z-A</option>
+                      <option ng-model='order' value="-inventory">Tồn kho: Giảm dần</option>
                     </select>
                   </span>
                 </div> -->
               </div>
               <div id="shop" class="shop row gutter-30 col-mb-30 mt-3">
-                <div class="product col-lg-3 col-md-4 col-sm-6 col-12" ng-repeat="product in products " ng-show="product.category==category || product.room==category" >
+                <div class="product col-lg-3 col-md-4 col-sm-6 col-12" ng-repeat="product in products" ng-show="rangePrice>=product.price || rangePrice>product.price*(-1)" >
                   <div class="grid-inner">
                     <div class="product-image">
                       <a href="" ng-click="productClick(product)"
