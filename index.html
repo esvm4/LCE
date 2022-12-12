@@ -96,7 +96,7 @@
                   <li class="top-links-item" ng-show="success">
                       <div ng-show="success" class="m-0 align-middle">
                         <p class="m-0 mx-1 align-middle fw-bold color" style="font-size: 1rem">{{login.firstname +" "+ login.lastname}}</p>
-                        <a href="" class="fw-lighter" style="color: rgb(88, 84, 84); font-size: .8rem">Đăng xuất</a>
+                        <a href="" class="fw-lighter" style="color: rgb(88, 84, 84); font-size: .8rem" ng-click="success=false">Đăng xuất</a>
                       </div>
                       <li ng-show="success" class="mx-1"><img src="{{login.avatar}}" alt="user avatar" style="width: 2rem;"></li>
                     </li>
