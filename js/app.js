@@ -185,6 +185,10 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $rootScope.cartQuantity=0;
       $rootScope.cartValue=0;
     }
+    $scope.logout = function(){
+      $scope.success =false;
+      $scope.login={};
+    }
 })
 
 
