@@ -100,6 +100,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $scope.categoryClick = function(category){
       $location.path("/collections/"+category);
       $scope.category=category;
+      $scope.head = category;
 
     }
     $scope.searchKey = function(){
