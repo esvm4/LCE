@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,9 @@
 
     <title>user info</title>
 
-    <script src="../js/angular-route.min.js"></script>
-    <script src="../js/angular-sanitize.min.js"></script>
-    <script src="../js/angular.min.js"></script>
-    <script src="../js/app.js"></script>
+    
   </head>
-  <body class="block-form-2" controller="myController">
+  <body class="block-form-2">
     <div id="wrapper" class="clearfix">
       <section id="content">
         <div class="content-wrap pt-2">
@@ -34,7 +31,7 @@
                   Tài khoản của tôi
                 </h1>
                 <img
-                  src="{{accounts[0].avatar}}"
+                  src="{{login.avatar}}"
                   alt="user avatar"
                   style="height: 100px;"
                   class="d-block mx-auto"
@@ -65,13 +62,24 @@
                   </div>
                 </div>
                 <div class="col-12 form-group">
-                  <label for="user-full-name">Họ tên: </label>
+                  <label for="user-full-name">Tên: </label>
                   <input
                     type="text"
                     name="user[full-name]"
                     id="user-full-name"
                     class="form-control required"
-                    value="{{accounts[0].firstname + accounts[0].lastname}}"
+                    value="{{login.firstname}}"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col-12 form-group">
+                  <label for="user-full-name">Họ: </label>
+                  <input
+                    type="text"
+                    name="user[full-name]"
+                    id="user-full-name"
+                    class="form-control required"
+                    value="{{login.lastname}}"
                     placeholder=""
                   />
                 </div>
@@ -80,12 +88,13 @@
                   <!-- dob -->
                   <label for="user-dob">Ngày sinh:</label>
                   <input
-                    type="date"
+                    type="text"
                     name="user[dob]"
                     id="user-dob"
                     class="form-control required"
-                    value="{{accounts[0].dob}}"
-                    ng-model="dob"
+                    
+                    value="{{login.dateOfBirth}}"
+                    
                   />
                 </div>
                 <div class="col-6 form-group">
@@ -96,7 +105,8 @@
                       type="radio"
                       name="user[gender]"
                       id="user-gender-male"
-                      value="Male"
+                      
+                      ng-checked="login.gender == 'Nam'"
                     />
                     <label class="form-check-label nott" for="user-gender-male">
                       Nam
@@ -108,7 +118,9 @@
                       type="radio"
                       name="user[gender]"
                       id="user-gender-female"
-                      value="Female"
+                      
+                      ng-checked="login.gender == 'Nữ'"
+
                     />
                     <label
                       class="form-check-label nott"
@@ -122,7 +134,9 @@
                       type="radio"
                       name="user[gender]"
                       id="user-gender-others"
-                      value="Others"
+                      
+                      ng-checked="login.gender == 'Khác'"
+
                     />
                     <label
                       class="form-check-label nott"
@@ -139,7 +153,7 @@
                     name="user[email]"
                     id="user-email"
                     class="form-control required"
-                    value="{{accounts[0].email}}"
+                    value="{{login.email}}"
                   />
                 </div>
 
@@ -150,7 +164,7 @@
                     name="user[password]"
                     id="user-password"
                     class="form-control required"
-                    value="{{accounts[0].password}}"
+                    value="{{login.password}}"
                   />
                 </div>
 
@@ -163,13 +177,15 @@
                     Cập nhật thông tin </i>
                   </button>
                 </div>
-                <div class="col-12" ng-show="">
+                <div class="col-12" ng-show="admin">
+                    
                     <button
+
                       type=""
                       name="user-submit"
                       class="btn btn-danger btn-scale d-md-block mx-auto"
                     >
-                      Quản trị admin </i>
+                    <a href="../admin-management/pages/dashboard.html">Quản trị admin</a> </i>
                     </button>
                   </div>
               </form>

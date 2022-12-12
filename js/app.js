@@ -66,6 +66,9 @@ myApp.config(function($routeProvider,$locationProvider){
     .when("/admin", {
       templateUrl: "../admin-management/pages/dashboard.html"
     })
+    .when("/userinfo", {
+      templateUrl: "../views/userinfo.html"
+    })
     //khởi tạo mặc định chạy trang home
     .otherwise({
       redirectTo: "/",
@@ -173,11 +176,15 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $scope.accounts=response.data.accounts;
     });
     $scope.success=false;
+    $scope.admin=false;
     $scope.authen =function(){
       for (var i =0; i<$scope.accounts.length;i++){
         if ($scope.accounts[i].email==$scope.login.email && $scope.accounts[i].password==$scope.login.password){
           $scope.success = true;
           $scope.login= $scope.accounts[i];
+          if($scope.login.email=="admin@gmail.com" && $scope.login.password=="admin"){
+            $scope.admin=true;
+          }
         }
       } 
     }
@@ -187,6 +194,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     }
     $scope.logout = function(){
       $scope.success =false;
+      $scope.admin=false;
       $scope.login={};
     }
 })

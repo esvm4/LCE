@@ -2,17 +2,17 @@
   "accounts": [
     {
       "firstname": "admin",
-      "lastname": "",
-      "dateOfBirth": "2001-12-02T17:00:00.000Z",
-      "gender": "Nam",
+      "lastname": "admin",
+      "dateOfBirth": "2001-12-02",
+      "gender": "Nữ",
       "email": "admin@gmail.com",
       "password": "admin",
       "avatar": "https://cdn-icons-png.flaticon.com/512/1864/1864640.png"
     },
     {
       "firstname": "Phi",
-      "lastname": "",
-      "dateOfBirth": "2001-12-02T17:00:00.000Z",
+      "lastname": "Trần",
+      "dateOfBirth": "2001-12-02",
       "gender": "Nam",
       "email": "phi@gmail.com",
       "password": "phi",
