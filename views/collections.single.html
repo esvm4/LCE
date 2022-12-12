@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US" >
+<html dir="ltr" lang="en-US">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="../css/custom.css" type="text/css" />
 
     <title>product.single</title>
-
   </head>
   <body class="stretched" ng-controller="myController">
-    <div id="wrapper" class="clearfix" >
+    <div id="wrapper" class="clearfix">
       <section id="content">
         <div class="content-wrap pb-0">
           <div class="single-product mb-6">
@@ -31,6 +30,9 @@
                   </div>
 
                   <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-0">
+                    <div class="product-name fw-bold fs-2">
+                      {{product.name}}
+                    </div>
                     <div
                       class="d-flex align-items-center justify-content-between"
                     >
@@ -49,9 +51,14 @@
                     >
                       <div class="quantity clearfix">
                         <!-- Giảm quantity -->
-                        <input type="button" value="-" class="minus" ng-click="minusQuantity()" />
+                        <input
+                          type="button"
+                          value="-"
+                          class="minus"
+                          ng-click="minusQuantity()"
+                        />
                         <!-- Số lượng -->
-                        
+
                         <input
                           type="number"
                           min="1"
@@ -61,7 +68,12 @@
                           ng-model="cartItem.quantity"
                         />
                         <!-- Tăng quantity -->
-                        <input type="button" value="+" class="plus" ng-click="plusQuantity()" />
+                        <input
+                          type="button"
+                          value="+"
+                          class="plus"
+                          ng-click="plusQuantity()"
+                        />
                       </div>
                       <!-- Button thêm vào giỏ -->
                       <button
@@ -79,34 +91,8 @@
                       data-readmore-trigger-open="Xem thêm <i class='icon-angle-down'></i>"
                       data-readmore-trigger-close="Thu gọn <i class='icon-angle-up'></i>"
                     >
-                    {{}}
-                      <div ng-bind-html="product.description">
-                        
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Vel, reprehenderit. Earum omnis nesciunt, rerum
-                          hic ducimus quis doloremque ex labore nobis corporis
-                          soluta at eligendi accusantium dolores excepturi
-                          consectetur vero. Ratione cumque ab earum rerum sed
-                          voluptate facere! Veritatis modi quae illum eveniet
-                          omnis deleniti dolorem, numquam sequi tenetur
-                          voluptates? Similique, maiores! Eos nesciunt eum earum
-                          asperiores harum minima unde. Temporibus ab fugiat
-                          dolor, nemo rem ipsam cum repellat magni voluptatum
-                          molestias deleniti debitis aut ea sed ullam voluptas
-                          cupiditate vero recusandae labore soluta quaerat nisi,
-                          natus et. Aut, at? Possimus, ab quis impedit earum
-                          expedita saepe accusantium! Voluptas, perferendis quos
-                          a consequatur minima deserunt? Enim quos harum
-                          repudiandae atque minima aliquid quae est a temporibus
-                          officia, dolore eius neque? Repellat assumenda
-                          reprehenderit, rerum beatae blanditiis labore
-                          deserunt! Suscipit illo cupiditate repudiandae dolorum
-                          quidem laboriosam, ex fugiat, enim dicta dolor, aut
-                          consequuntur fuga distinctio quasi. Fuga magnam
-                          nostrum enim neque.
-                        </p>
-                      </div>
+                      {{}}
+                      <div ng-bind-html="product.description"></div>
                       <a
                         href="#"
                         class="btn btn-dark btn-sm read-more-trigger"
