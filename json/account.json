@@ -5,8 +5,9 @@
         "lastname":"Tran",
         "dateOfBirth":"2001-12-02T17:00:00.000Z",
         "gender":"Nam",
-        "email":"phi@gmail.com",
-        "password":"phi"
+        "email":"admin@gmail.com",
+        "password":"admin",
+        "avatar":"https://cdn-icons-png.flaticon.com/512/1864/1864640.png"
         
       }
     ]
