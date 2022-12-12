@@ -2544,7 +2544,7 @@ html[xmlns] .slider-wrap {
   margin: 0;
 }
 .top-links-item:hover {
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 .top-links-section,
 .top-links-sub-menu {

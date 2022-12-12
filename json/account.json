@@ -1,14 +1,22 @@
 {
-    "accounts": [
-      {
-        "firstname":"Phi",
-        "lastname":"Tran",
-        "dateOfBirth":"2001-12-02T17:00:00.000Z",
-        "gender":"Nam",
-        "email":"admin@gmail.com",
-        "password":"admin",
-        "avatar":"https://cdn-icons-png.flaticon.com/512/1864/1864640.png"
-        
-      }
-    ]
+  "accounts": [
+    {
+      "firstname": "admin",
+      "lastname": "",
+      "dateOfBirth": "2001-12-02T17:00:00.000Z",
+      "gender": "Nam",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/1864/1864640.png"
+    },
+    {
+      "firstname": "Phi",
+      "lastname": "",
+      "dateOfBirth": "2001-12-02T17:00:00.000Z",
+      "gender": "Nam",
+      "email": "phi@gmail.com",
+      "password": "phi",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/892/892848.png"
+    }
+  ]
 }
