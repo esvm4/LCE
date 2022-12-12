@@ -43,7 +43,7 @@
                         name="checkout-form-shipping-name"
                         id="checkout-form-shipping-name"
                         class="form-control required"
-                        value=""
+                        value="{{login.firstname +' '+ login.lastname}}"
                         placeholder="John Doe"
                       />
                     </div>
@@ -55,7 +55,7 @@
                         name="checkout-form-shipping-email"
                         id="checkout-form-shipping-email"
                         class="form-control"
-                        value=""
+                        value="{{login.email}}"
                         placeholder="john@doe.com"
                       />
                     </div>
@@ -270,11 +270,12 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group center">
-                    <a href="">
+                    <a href="#/ordersucces" ng-click="finishCart()">
                       <button
                         type="submit"
                         name="checkout-form-submit"
                         class="button button-large button-rounded"
+                        ng-submit="finishCart()"
                       >
                         Hoàn tất
                       </button>
@@ -282,7 +283,7 @@
                   </div>
                 </div>
                 <p class="link-continue">
-                  <a href="../pages/collections/all">
+                  <a href="#/all">
                     <i class="icon-reply1"> </i> Tiếp tục mua hàng
                   </a>
                 </p>

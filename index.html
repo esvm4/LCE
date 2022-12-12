@@ -45,7 +45,7 @@
             <div class="col-12 col-md-auto">
               <div class="top-links">
                 <ul class="top-links-container">
-                  <li class="top-links-item">
+                  <li class="top-links-item" ng-hide="success">
                     <a href=""> Đăng nhập <i class="icon-angle-down"> </i> </a>
                     <div class="top-links-section menu-pos-invert">
                       <form id="top-login" autocomplete="off" ng-submit="authen()()">
@@ -93,9 +93,9 @@
                       </form>
                     </div>
                   </li>
-                  <li class="top-links-item">
-                      <li><img src="https://cdn-icons-png.flaticon.com/512/1864/1864640.png" alt="cat icon" style="width: 1rem;"></li>
-                      <p class="m-0 mx-1 align-middle fw-bold">{{login.email}}</p>
+                  <li class="top-links-item" ng-show="success">
+                      <p ng-show="success" class="m-0 mx-1 align-middle fw-bold">{{login.firstname +" "+ login.lastname}}</p>
+                      <li ng-show="success"><img src="https://cdn-icons-png.flaticon.com/512/1864/1864640.png" alt="cat icon" style="width: 1rem;"></li>
                     </li>
                 </ul>
               </div>

@@ -57,6 +57,15 @@ myApp.config(function($routeProvider,$locationProvider){
     .when("/blog2", {
       templateUrl: "../views/blog2.html"
     })
+    .when("/ordersucces", {
+      templateUrl: "../views/ordersuccess.html"
+    })
+    .when("/deliveryinfo", {
+      templateUrl: "../views/deliveryinfo.html"
+    })
+    .when("/admin", {
+      templateUrl: "../admin-management/pages/dashboard.html"
+    })
     //khởi tạo mặc định chạy trang home
     .otherwise({
       redirectTo: "/",
@@ -79,9 +88,8 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     $http.get('../json/product.json').then(function(response){
         $scope.products=response.data.products;
     });
-    $http.get('../json/account.json').then(function(response){
-      $scope.accounts=response.data.accounts;
-  });
+    
+  
     // Hàm khi click vào sản phẩm
     $scope.productClick = function (product) {
       $location.path("/product/" + product.slug);
@@ -160,13 +168,21 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       }
       
     }
+    $http.get('../json/account.json').then(function(response){
+      $scope.accounts=response.data.accounts;
+    });
+    $scope.success=false;
     $scope.authen =function(){
       for (var i =0; i<$scope.accounts.length;i++){
         if ($scope.accounts[i].email==$scope.login.email && $scope.accounts[i].password==$scope.login.password){
-          $scope.authen = true;
+          $scope.success = true;
+          $scope.login= $scope.accounts[i];
         }
-      }
-      
+      } 
+    }
+    $scope.finishCart =function(){
+      $rootScope.cartQuantity=0;
+      $rootScope.cartValue=0;
     }
 })
 
