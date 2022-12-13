@@ -78,12 +78,7 @@ myApp.config(function($routeProvider,$locationProvider){
 
 
 myApp.controller("myController",function myController($rootScope, $scope, $location, $http) {
-    // test
-    $rootScope.cartItem={"quantity":1};
-    $rootScope.cartItemCopy={};
-    $rootScope.cart=[];
-    $rootScope.cartQuantity=0;
-    $rootScope.cartValue=0;
+    
     $scope.login={};
     $scope.rangePrice=9999999;
     $scope.search="";
@@ -92,19 +87,19 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         $scope.products=response.data.products;
     });
     
-  
     // Hàm khi click vào sản phẩm
     $scope.productClick = function (product) {
       $location.path("/product/" + product.slug);
       $rootScope.product = product;
       $rootScope.cartItem={"quantity":1};
-      
+    
+    // Hàm khi click vào nhóm sản phẩm
     };
     $scope.categoryClick = function(category){
       $location.path("/collections/"+category);
       $scope.category=category;
       $scope.head = category;
-
+      //Hàm khi search từ khóa
     }
     $scope.searchKey = function(){
       if($scope.search != ""){
@@ -114,7 +109,6 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     // Hàm tăng số lượng sản phẩm
     $rootScope.plusQuantity =function(){
       $rootScope.cartItem.quantity++;
-      
     }
     // Hàm giảm số lượng sản phẩm
     $rootScope.minusQuantity =function(){
@@ -122,6 +116,10 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         $rootScope.cartItem.quantity--;
       }
     }
+    $rootScope.cartItemCopy={};
+    $rootScope.cart=[];
+    $rootScope.cartQuantity=0;
+    $rootScope.cartValue=0;
     // Hàm khi thêm sản phẩm vào
     $rootScope.addToCart= function(product){
       $rootScope.cartItem.product = product;
@@ -147,14 +145,16 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         $rootScope.cartItemCopy = Object.assign({}, $rootScope.cartItem);
         $rootScope.cart.push($rootScope.cartItemCopy);
       }
-      
+    //Hàm xóa khỏi cart
     };   
+    // Hàm xóa khỏi cart
     $scope.remove=function(item){
       let removeItem = $rootScope.cart.indexOf(item)
       $rootScope.cart.splice(removeItem,1);
       $rootScope.cartQuantity-=item.quantity;
       $rootScope.cartValue-=item.totalPrice;
     }
+    //Hàm xử lý ở cart
     $scope.plusInCart=function(item){
       let index = $rootScope.cart.indexOf(item)
       $rootScope.cart[index].quantity++;
@@ -162,6 +162,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $rootScope.cartQuantity++;
       $rootScope.cartValue+=$rootScope.cart[index].product.price*1;
     }
+    //Hàm xử lý ở cart
     $scope.minusInCart=function(item){
       let index = $rootScope.cart.indexOf(item)
       if($rootScope.cart[index].quantity>1){
@@ -177,6 +178,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
     });
     $scope.success=false;
     $scope.admin=false;
+    //Hàm xác nhận đăng nhập
     $scope.authen =function(){
       for (var i =0; i<$scope.accounts.length;i++){
         if ($scope.accounts[i].email==$scope.login.email && $scope.accounts[i].password==$scope.login.password){
@@ -188,10 +190,12 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
         }
       } 
     }
+    //Hàm hoàn tất giỏ hàng
     $scope.finishCart =function(){
       $rootScope.cartQuantity=0;
       $rootScope.cartValue=0;
     }
+    //Hàm đăng xuất
     $scope.logout = function(){
       $scope.success =false;
       $scope.admin=false;
