@@ -1,170 +1,151 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<div id="wrapper" class="clearfix">
+  <section id="content">
+    <div class="container-fluid topmargin">
+      <div class="row">
+        <img
+          src="https://file.hstatic.net/200000243079/file/slideshow_7_57685edf11cd46e28dd3aa3cde039242.jpg"
+          alt="new product promo"
+        />
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="position-sticky" style="top: 30px">
+            <div class="container">
+              <h5 class="text-capitalize mb-2">Giá sản phẩm</h4>
+              <div>
+                <input
+                  id="radio-1"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="500000"
+                />
+                <label for="radio-1" class="radio-style-1-label">
+                  ≤ 500,000₫
+                </label>
+              </div>
 
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
+              <div>
+                <input
+                  id="radio-2"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="1000000"
+                />
+                <label for="radio-2" class="radio-style-1-label">
+                  ≤ 1,000,000₫
+                </label>
+              </div>
 
-    <title>collections</title>
-  </head>
-  <body>
-    
-    <div id="wrapper" class="clearfix">
-      <section id="content">
-        <div class="container-fluid topmargin">
-          <div class="row">
-            <img
-              src="https://file.hstatic.net/200000243079/file/slideshow_7_57685edf11cd46e28dd3aa3cde039242.jpg"
-              alt="new product promo"
-            />
-          </div>
-          <div class="row">
-            <div class="col-md-2">
-              <div class="position-sticky" style="top: 30px">
-                <div class="container">
-                  <h5 class="text-capitalize mb-2">Giá sản phẩm</h4>
-                  <div>
-                    <input
-                      id="radio-1"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="500000"
-                    />
-                    <label for="radio-1" class="radio-style-1-label">
-                      ≤ 500,000₫
-                    </label>
-                  </div>
+              <div>
+                <input
+                  id="radio-3"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="1500000"
+                />
+                <label for="radio-3" class="radio-style-1-label">
+                  ≤ 1,500,000₫
+                </label>
+              </div>
 
-                  <div>
-                    <input
-                      id="radio-2"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="1000000"
-                    />
-                    <label for="radio-2" class="radio-style-1-label">
-                      ≤ 1,000,000₫
-                    </label>
-                  </div>
+              <div>
+                <input
+                  id="radio-4"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="2000000"
+                />
+                <label for="radio-4" class="radio-style-1-label">
+                  ≤ 2,000,000₫
+                </label>
+              </div>
 
-                  <div>
-                    <input
-                      id="radio-3"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="1500000"
-                    />
-                    <label for="radio-3" class="radio-style-1-label">
-                      ≤ 1,500,000₫
-                    </label>
-                  </div>
+              <div>
+                <input
+                  id="radio-5"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="5000000"
+                />
+                <label for="radio-5" class="radio-style-1-label">
+                  ≤ 5,000,000₫
+                </label>
+              </div>
 
-                  <div>
-                    <input
-                      id="radio-4"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="2000000"
-                    />
-                    <label for="radio-4" class="radio-style-1-label">
-                      ≤ 2,000,000₫
-                    </label>
-                  </div>
-
-                  <div>
-                    <input
-                      id="radio-5"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="5000000"
-                    />
-                    <label for="radio-5" class="radio-style-1-label">
-                      ≤ 5,000,000₫
-                    </label>
-                  </div>
-
-                  <div>
-                    <input
-                      id="radio-6"
-                      class="radio-style"
-                      name="radio-group-prices"
-                      type="radio"
-                      ng-model="rangePrice"
-                      ng-value="-5000000"
-                    />
-                    <label for="radio-6" class="radio-style-1-label">
-                      > 5,000,000₫
-                    </label>
-                  </div>
-                </div>
+              <div>
+                <input
+                  id="radio-6"
+                  class="radio-style"
+                  name="radio-group-prices"
+                  type="radio"
+                  ng-model="rangePrice"
+                  ng-value="-5000000"
+                />
+                <label for="radio-6" class="radio-style-1-label">
+                  > 5,000,000₫
+                </label>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-10 justify-content-between align-items-center">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-auto mb-4">
-                <h3 class="fw-medium h1">
-                  {{head}}
-                </h3>
-              </div>
-                <!-- <div class="col-auto mb-4 d-flex">
-                  <span class="bottommargin-sm mt-3">
-                    <select class="form-select" style="width: 100%">
-                      <option value="increasing-price">Giá: Tăng dần</option>
-                      <option value="decreasing-price">Giá: Giảm dần</option>
-                      <option value="nameaz">Tên: A-Z</option>
-                      <option value="nameza">Tên: Z-A</option>
-                      <option value="decreasing-inventory">Tồn kho: Giảm dần</option>
-                    </select>
-                  </span>
-                </div> -->
-              </div>
-              <div id="shop" class="shop row gutter-30 col-mb-30 mt-3">
-                <div class="product col-lg-3 col-md-4 col-sm-6 col-12" ng-repeat="product in products" ng-show="(product.category==category || product.room==category)&&(rangePrice>=product.price)" >
-                  <div class="grid-inner">
-                    <div class="product-image">
-                      <a href="" ng-click="productClick(product)"
-                        > <img
-                          src="{{product.image}}"
-                          alt="{{product.slug}}"
-                      /> </a>
-                    </div>
-                    <div class="product-desc">
-                      <div class="product-title mb-0">
-                        <h4 class="mb-0">
-                          <a class="fw-medium" href="" ng-click="productClick(product)"
-                            >{{product.name}}</a
-                          >
-                        </h4>
-                      </div>
-                      <div class="product-price">
-                        <del>{{product.originalPrice}}₫</del> <br>
-                        <ins>{{product.price}}₫</ins>
-                      </div>
-                    </div>
+        <div class="col-md-10 justify-content-between align-items-center">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto mb-4">
+            <h3 class="fw-medium h1">
+              {{head}}
+            </h3>
+          </div>
+            <!-- <div class="col-auto mb-4 d-flex">
+              <span class="bottommargin-sm mt-3">
+                <select class="form-select" style="width: 100%">
+                  <option value="increasing-price">Giá: Tăng dần</option>
+                  <option value="decreasing-price">Giá: Giảm dần</option>
+                  <option value="nameaz">Tên: A-Z</option>
+                  <option value="nameza">Tên: Z-A</option>
+                  <option value="decreasing-inventory">Tồn kho: Giảm dần</option>
+                </select>
+              </span>
+            </div> -->
+          </div>
+          <div id="shop" class="shop row gutter-30 col-mb-30 mt-3">
+            <div class="product col-lg-3 col-md-4 col-sm-6 col-12" ng-repeat="product in products" ng-show="(product.category==category || product.room==category)&&(rangePrice>=product.price)" >
+              <div class="grid-inner">
+                <div class="product-image">
+                  <a href="" ng-click="productClick(product)"
+                    > <img
+                      src="{{product.image}}"
+                      alt="{{product.slug}}"
+                  /> </a>
+                </div>
+                <div class="product-desc">
+                  <div class="product-title mb-0">
+                    <h4 class="mb-0">
+                      <a class="fw-medium" href="" ng-click="productClick(product)"
+                        >{{product.name}}</a
+                      >
+                    </h4>
+                  </div>
+                  <div class="product-price">
+                    <del>{{product.originalPrice}}₫</del> <br>
+                    <ins>{{product.price}}₫</ins>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
-  </body>
-</html>
+  </section>
+</div>

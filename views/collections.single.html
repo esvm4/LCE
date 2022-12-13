@@ -1,114 +1,98 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
+<body class="stretched" ng-controller="myController">
+  <div id="wrapper" class="clearfix">
+    <section id="content">
+      <div class="content-wrap pb-0">
+        <div class="single-product mb-6">
+          <div class="product">
+            <div class="container-fluid">
+              <div class="row gutter-50">
+                <div class="col-xl-2"></div>
 
-    <title>product.single</title>
-  </head>
-  <body class="stretched" ng-controller="myController">
-    <div id="wrapper" class="clearfix">
-      <section id="content">
-        <div class="content-wrap pb-0">
-          <div class="single-product mb-6">
-            <div class="product">
-              <div class="container-fluid">
-                <div class="row gutter-50">
-                  <div class="col-xl-2"></div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                  <img
+                    class="d-block mx-auto"
+                    src="{{product.image}}"
+                    alt="{{product.slug}}"
+                  />
+                </div>
 
-                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <img
-                      class="d-block mx-auto"
-                      src="{{product.image}}"
-                      alt="{{product.slug}}"
-                    />
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-0">
+                  <div class="product-name fw-bold fs-2">{{product.name}}</div>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="product-price">
+                      <del>{{product.originalPrice}}₫</del>
+                      <ins>{{product.price}}₫</ins>
+                      <div class="text-warning">-{{product.discount}}</div>
+                    </div>
                   </div>
+                  <div class="line line-sm"></div>
 
-                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-0">
-                    <div class="product-name fw-bold fs-2">
-                      {{product.name}}
-                    </div>
-                    <div
-                      class="d-flex align-items-center justify-content-between"
-                    >
-                      <div class="product-price">
-                        <del>{{product.originalPrice}}₫</del>
-                        <ins>{{product.price}}₫</ins>
-                        <div class="text-warning">-{{product.discount}}</div>
-                      </div>
-                    </div>
-                    <div class="line line-sm"></div>
+                  <form
+                    class="cart mb-0 d-flex justify-content-between align-items-center"
+                    method="post"
+                    enctype="multipart/form-data"
+                  >
+                    <div class="quantity clearfix">
+                      <!-- Giảm quantity -->
+                      <input
+                        type="button"
+                        value="-"
+                        class="minus"
+                        ng-click="minusQuantity()"
+                      />
+                      <!-- Số lượng -->
 
-                    <form
-                      class="cart mb-0 d-flex justify-content-between align-items-center"
-                      method="post"
-                      enctype="multipart/form-data"
-                    >
-                      <div class="quantity clearfix">
-                        <!-- Giảm quantity -->
-                        <input
-                          type="button"
-                          value="-"
-                          class="minus"
-                          ng-click="minusQuantity()"
-                        />
-                        <!-- Số lượng -->
-
-                        <input
-                          type="number"
-                          min="1"
-                          name="quantity"
-                          title="Qty"
-                          class="qty"
-                          ng-model="cartItem.quantity"
-                        />
-                        <!-- Tăng quantity -->
-                        <input
-                          type="button"
-                          value="+"
-                          class="plus"
-                          ng-click="plusQuantity()"
-                        />
-                      </div>
-                      <!-- Button thêm vào giỏ -->
-                      <button
-                        type="submit"
-                        class="add-to-cart button button-large m-0"
-                        ng-click="addToCart(product)"
-                      >
-                        Thêm vào giỏ
-                      </button>
-                    </form>
-                    <div class="line line-sm"></div>
-                    <div
-                      data-readmore="true"
-                      data-readmore-size="200px"
-                      data-readmore-trigger-open="Xem thêm <i class='icon-angle-down'></i>"
-                      data-readmore-trigger-close="Thu gọn <i class='icon-angle-up'></i>"
-                    >
-                      {{}}
-                      <div ng-bind-html="product.description"></div>
-                      <a
-                        href="#"
-                        class="btn btn-dark btn-sm read-more-trigger"
-                      ></a>
+                      <input
+                        type="number"
+                        min="1"
+                        name="quantity"
+                        title="Qty"
+                        class="qty"
+                        ng-model="cartItem.quantity"
+                      />
+                      <!-- Tăng quantity -->
+                      <input
+                        type="button"
+                        value="+"
+                        class="plus"
+                        ng-click="plusQuantity()"
+                      />
                     </div>
+                    <!-- Button thêm vào giỏ -->
+                    <button
+                      type="submit"
+                      class="add-to-cart button button-large m-0"
+                      ng-click="addToCart(product)"
+                    >
+                      Thêm vào giỏ
+                    </button>
+                  </form>
+                  <div class="line line-sm"></div>
+                  <div
+                    data-readmore="true"
+                    data-readmore-size="200px"
+                    data-readmore-trigger-open="Xem thêm <i class='icon-angle-down'></i>"
+                    data-readmore-trigger-close="Thu gọn <i class='icon-angle-up'></i>"
+                  >
+                    {{}}
+                    <div ng-bind-html="product.description"></div>
+                    <a
+                      href="#"
+                      class="btn btn-dark btn-sm read-more-trigger"
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <script src="../include/js/jquery.js"></script>
-    <script src="../include/js/plugins.min.js"></script>
+      </div>
+    </section>
+  </div>
+  <script src="../include/js/jquery.js"></script>
+  <script src="../include/js/plugins.min.js"></script>
 
-    <script src="../include/js/functions.js"></script>
-  </body>
-</html>
+  <script src="../include/js/functions.js"></script>
+</body>

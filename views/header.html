@@ -1,356 +1,329 @@
-<!DOCTYPE html>
+<header>
 
-  
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    
-    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/settings.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/layers.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/navigation.css"
-    />
-    
+<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-    <title>Header</title>
-  
-  <div>
-    <div id="wrapper" class="clearfix">
-      <div id="top-bar">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-12 col-md-auto">
-              <p class="mb-0 py-2 text-center text-md-start">
-                <i class="icon-phone"> </i> (+84) 187333178 |
-                <i class="icon-envelope"></i>
-                <a href="mailto:ldeco@gmail.com" rel="nofollow">
-                  lce@gmail.com
-                </a>
-              </p>
-            </div>
-            <div class="col-12 col-md-auto">
-              <div class="top-links on-click">
-                <ul class="top-links-container">
-                  <li class="top-links-item">
-                    <a href=""> Đăng nhập <i class="icon-angle-down"> </i> </a>
-                    <div class="top-links-section menu-pos-invert">
-                      <form id="top-login" autocomplete="off">
-                        <div class="form-group col-12">
-                          <label>Email </label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder=" Địa chỉ email"
-                          />
-                        </div>
-                        <div class="form-group col-12">
-                          <label>Mật khẩu</label>
-                          <input
-                            type="password"
-                            class="form-control"
-                            placeholder="Mật khẩu"
-                            required
-                          />
-                        </div>
-                        <div class="form-group form-check col-12">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id="top-login-checkbox"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="top-login-checkbox"
-                          >
-                            Ghi nhớ đăng nhập
-                          </label>
-                        </div>
-                        <div class="col-12 form-group text-center">
-                          <button class="btn btn-danger w-100 mb-3">Đăng nhập</button>
-                          <h6 class="fw-medium">
-                            Khách hàng mới? <a href="../pages/register"><u>Đăng ký</u></a>
-                          </h6>
-                        </div>
-                      </form>
+<link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="../css/animate.css" type="text/css" />
+<link rel="stylesheet" href="../css/custom.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<div>
+<div id="wrapper" class="clearfix">
+  <div id="top-bar">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-auto">
+          <p class="mb-0 py-2 text-center text-md-start">
+            <i class="icon-phone"> </i> (+84) 187333178 |
+            <i class="icon-envelope"></i>
+            <a href="mailto:ldeco@gmail.com" rel="nofollow">
+              lce@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="col-12 col-md-auto">
+          <div class="top-links">
+            <ul class="top-links-container">
+              <li class="top-links-item" ng-hide="success">
+                <a href=""> Đăng nhập <i class="icon-angle-down"> </i> </a>
+                <div class="top-links-section menu-pos-invert">
+                  <form id="top-login" autocomplete="off" ng-submit="authen()()">
+                    <div class="form-group col-12">
+                      <label>Email </label>
+                      
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder=" Địa chỉ email"
+                        ng-model="login.email"
+                      />
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                    <div class="form-group col-12">
+                      <label>Mật khẩu</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Mật khẩu"
+                        required
+                        ng-model="login.password"
+                      />
+                    </div>
+                    <div class="form-group form-check col-12">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="top-login-checkbox"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="top-login-checkbox"
+                      >
+                        Ghi nhớ đăng nhập
+                      </label>
+                    </div>
+                    <div class="col-12 form-group text-center">
+                      <button class="button button-rounded button-large w-100 mb-3" ng-click="authen()">Đăng nhập</button>
+                      <h6 class="fw-medium">
+                        Khách hàng mới? <a href="#/register"><u>Đăng ký</u></a>
+                      </h6>
+                    </div>
+                    <input type="submit" hidden />
+                  </form>
+                </div>
+              </li>
+              <li class="top-links-item" ng-show="success">
+                  <div ng-show="success" class="m-0 align-middle">
+                    <!-- <a class="m-0 mx-1 align-middle fw-bold color" style="font-size: 1rem">{{login.firstname +" "+ login.lastname}}</a> -->
+                    <a href="#/userinfo" class = "text-center fw-bold" style="font-size: 1rem" >{{login.firstname}}</a> <br>
+                    <a href="" class="fw-lighter" style="color: rgb(88, 84, 84); font-size: .8rem" ng-click="logout()">Đăng xuất</a>
+                  </div>
+                  <li ng-show="success" class="mx-1"><img src="{{login.avatar}}" alt="user avatar" style="width: 2rem;"></li>
+                </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <header id="header">
-        <div id="header-wrap">
-          <div class="container">
-            <div class="header-row">
-              <div id="logo">
-                <a href="../pages/index.html" class="standard-logo"
-                  ><img src="../imgs/logo.png" alt="L'CE Logo"
-                /></a>
-                <a href="../pages/index.html" class="retina-logo"
-                  ><img src="../imgs/logo.png" alt="L'CE Logo"
-                /></a>
-              </div>
-              <div class="header-misc">
-                <div id="top-search" class="header-misc-icon">
-                  <a href="#" id="top-search-trigger"
-                    ><i class="icon-line-search"></i
-                    ><i class="icon-line-cross"></i
-                  ></a>
+  <header id="header">
+    <div id="header-wrap">
+      <div class="container">
+        <div class="header-row">
+          <div id="logo">
+            <a href="#/home" class="standard-logo"
+              ><img src="../imgs/logo.png" alt="L'CE Logo"
+            /></a>
+            <a href="#/home" class="retina-logo"
+              ><img src="../imgs/logo.png" alt="L'CE Logo"
+            /></a>
+          </div>
+          <div class="header-misc">
+            <div id="top-search" class="header-misc-icon">
+              <a href="#" id="top-search-trigger"
+                ><i class="icon-line-search"></i
+                ><i class="icon-line-cross"></i
+              ></a>
+            </div>
+
+            <div id="top-cart" class="header-misc-icon d-none d-sm-block">
+              <a href="#" id="top-cart-trigger"
+                ><i class="icon-line-bag"></i
+                ><span class="top-cart-number">{{cartQuantity}}</span></a
+              >
+              <div class="top-cart-content">
+                <div class="top-cart-title">
+                  <h4>Giỏ hàng</h4>
                 </div>
-
-                <div id="top-cart" class="header-misc-icon d-none d-sm-block">
-                  <a href="#" id="top-cart-trigger"
-                    ><i class="icon-line-bag"></i
-                    ><span class="top-cart-number">5</span></a
-                  >
-                  <div class="top-cart-content">
-                    <div class="top-cart-title">
-                      <h4>Giỏ hàng</h4>
+                <div class="top-cart-items">
+                  <div class="top-cart-item" ng-repeat="item in cart">
+                    <div class="top-cart-item-image">
+                      <a href="#"
+                        ><img src={{item.product.image}} alt="Pr1"
+                      /></a>
                     </div>
-                    <div class="top-cart-items">
-                      <div class="top-cart-item">
-                        <div class="top-cart-item-image">
-                          <a href="#"
-                            ><img src="../imgs/product1.jpg" alt="Pr1"
-                          /></a>
-                        </div>
-                        <div class="top-cart-item-desc">
-                          <div class="top-cart-item-desc-title">
-                            <a href="#">Product 1</a>
-                            <span class="top-cart-item-price d-block">
-                              12 300 400</span
-                            >
-                          </div>
-                          <div class="top-cart-item-quantity">x 2</div>
-                        </div>
+                    <div class="top-cart-item-desc">
+                      <div class="top-cart-item-desc-title">
+                        <a href="#">{{item.product.name}}</a>
+                        <span class="top-cart-item-price d-block">
+                          {{item.product.price}}</span
+                        >
                       </div>
-                      <div class="top-cart-item">
-                        <div class="top-cart-item-image">
-                          <a href="#"
-                            ><img src="../imgs/product2.jpg" alt="Pr2"
-                          /></a>
-                        </div>
-                        <div class="top-cart-item-desc">
-                          <div class="top-cart-item-desc-title">
-                            <a href="#">Product 2</a>
-                            <span class="top-cart-item-price d-block"
-                              >10 000 000</span
-                            >
-                          </div>
-                          <div class="top-cart-item-quantity">x 3</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="top-cart-action">
-                      <span class="top-checkout-price"> 54 600 800 </span>
-                      <a href="#" class="button button-3d button-small m-0 ">Xem giỏ hàng</a>
-                        
-                      </a>
+                      <div class="top-cart-item-quantity">x {{item.quantity}}</div>
                     </div>
                   </div>
                 </div>
+                <div class="top-cart-action">
+                  <span class="top-checkout-price"> {{cartValue}} </span>
+                  <a href="#/cart" class="button button-3d button-small m-0">Xem giỏ hàng</a>
+                    
+                  </a>
+                </div>
               </div>
-              <div id="primary-menu-trigger">
-                <svg class="svg-trigger" viewBox="0 0 100 100">
-                  <path
-                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
-                  ></path>
-                  <path d="m 30,50 h 40"></path>
-                  <path
-                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
-                  ></path>
-                </svg>
-              </div>
-
-              <nav class="primary-menu">
-                <ul class="menu-container">
-                  <li class="menu-item current">
-                    <a class="menu-link" href="../pages/index.html">
-                      <div>Trang chủ</div>
-                    </a>
-                  </li>
-
-                  <li class="menu-item">
-                    <a class="menu-link" href="../pages/products.html">
-                      <div>Sản phầm <i class="icon-angle-down"> </i></div>
-                    </a>
-                    <ul class="sub-menu-container">
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/tables"
-                        >
-                          <div>Bàn</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/chairs"
-                        >
-                          <div>Ghế</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/cabinets"
-                        >
-                          <div>Tủ</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a class="menu-link" href="../pages/products.html/beds">
-                          <div>Giường</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/shelves"
-                        >
-                          <div>Kệ</div>
-                        </a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/lamps"
-                        >
-                          <div>Đèn</div>
-                        </a>
-                      </li>
-
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/others"
-                        >
-                          <div>Khác</div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="menu-item">
-                    <a class="menu-link" href="../pages/products.html"
-                      ><div>Phòng <i class="icon-angle-down"> </i></div
-                    ></a>
-                    <ul class="sub-menu-container">
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/bedroom"
-                        >
-                          <div>Phòng ngủ</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/living-room"
-                        >
-                          <div>Phòng khách</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/bathroom"
-                        >
-                          <div>Phòng tắm</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/kitchen"
-                        >
-                          <div>Phòng bếp</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/garden"
-                        >
-                          <div>Sân vườn</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a
-                          class="menu-link"
-                          href="../pages/products.html/office"
-                        >
-                          <div>Văn phòng</div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="menu-item">
-                    <a class="menu-link" href="#"> <div>Blog</div> </a>
-                  </li>
-
-                  <li class="menu-item">
-                    <a class="menu-link" href="#"> <div>Giới thiệu</div> </a>
-                  </li>
-                </ul>
-              </nav>
-              <form class="top-search-form" method="get">
-                <input
-                  type="text"
-                  name="q"
-                  class="form-control"
-                  value=""
-                  placeholder="Nhập tìm kiếm sản phẩm &amp; nhấn Enter..."
-                  autocomplete="off"
-                />
-              </form>
             </div>
           </div>
+          <div id="primary-menu-trigger">
+            <svg class="svg-trigger" viewBox="0 0 100 100">
+              <path
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+              ></path>
+              <path d="m 30,50 h 40"></path>
+              <path
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+              ></path>
+            </svg>
+          </div>
+
+          <nav class="primary-menu">
+            <ul class="menu-container">
+              <li class="menu-item current">
+                <a class="menu-link" href="#/home">
+                  <div>Trang chủ</div>
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#/all" >
+                  <div>Sản phẩm <i class="icon-angle-down"> </i></div>
+                </a>
+                <ul class="sub-menu-container">
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Bàn')"
+                    >
+                      <div>Bàn</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Ghế')"
+                    >
+                      <div>Ghế</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Tủ')"
+                    >
+                      <div>Tủ</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href=""
+                    ng-click="categoryClick('Giường')">
+                      <div>Giường</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Kệ')"
+                    >
+                      <div>Kệ</div>
+                    </a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Đèn')"
+                    >
+                      <div>Đèn</div>
+                    </a>
+                  </li>
+
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Khác')"
+                    >
+                      <div>Khác</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#/all"
+                  ><div>Phòng <i class="icon-angle-down"> </i></div
+                ></a>
+                <ul class="sub-menu-container">
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Phòng ngủ')"
+                    >
+                      <div>Phòng ngủ</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Phòng khách')"
+                    >
+                      <div>Phòng khách</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Phòng tắm')"
+                    >
+                      <div>Phòng tắm</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Phòng bếp')"
+                    >
+                      <div>Phòng bếp</div>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      class="menu-link"
+                      href=""
+                      ng-click="categoryClick('Sân vườn')"
+                    >
+                      <div>Sân vườn</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#/blog"> <div>Blog</div> </a>
+              </li>
+
+              <li class="menu-item">
+                <a class="menu-link" href="#/aboutus"> <div>Giới thiệu</div> </a>
+              </li>
+            </ul>
+          </nav>
+          <form class="top-search-form" method="get" ng-submit="searchKey()">
+            <input
+              type="text"
+              name="q"
+              class="form-control"
+              placeholder="Nhập tìm kiếm sản phẩm &amp; nhấn Enter..."
+              autocomplete="off"
+              ng-model="search"
+              
+              
+            />
+            <input type="submit" hidden />
+          </form>
+
         </div>
-        <div class="header-wrap-clone"></div>
-      </header>
+      </div>
     </div>
+    <div class="header-wrap-clone"></div>
+  </header>
+</div>
 
-    <script src="../include/js/jquery.js"></script>
-    <script src="../include/js/plugins.min.js"></script>
-    <script src="../include/js/functions.js"></script>
+<script src="../include/js/jquery.js"></script>
+<script src="../include/js/plugins.min.js"></script>
+<script src="../include/js/functions.js"></script>
 
-    <script src="../include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="../include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="../include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-    
-  </div>
-  
+</div>
+
+
+</header>

@@ -1,104 +1,61 @@
-<!DOCTYPE html>
-
-
-
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index.product</title>
-    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="../css/style.css" type="text/css" />
-
-    <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="../css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/settings.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/layers.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../include/rs-plugin/css/navigation.css"
-    />
-    
-  </head>
-  <body class="stretched">
-    <div id="wrapper" class="clearfix">
-      <section id="content">
-        <div class="content-wrap">
-          <div class="container">
-            <div class="row gutter-50 mb-3">
-              <div class="section center bg-transparent my-0 py-5">
-                <h1 class="fw-bold">
-                  <a href="../pages/collections/features">Sản phẩm nổi bật</a>
-                </h1>
+<div id="wrapper" class="clearfix">
+  <section id="content">
+    <div class="content-wrap">
+      <div class="container">
+        <div class="row gutter-50 mb-3">
+          <div class="section center bg-transparent my-0 py-5">
+            <h1 class="fw-bold">
+              <a href="../pages/collections/features">Sản phẩm nổi bật</a>
+            </h1>
+          </div>
+          <div ng-repeat="product in products |orderBy: '-discount' | limitTo:12 " ng-show="product.price != product.orginalPrice"
+            class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100"
+          >
+            <div class="border-0 h-shadow h-translatey-sm all-ts">
+              <div class="product-image">
+                <a href="">
+                  <img
+                    src="{{product.image}}"
+                    alt="{{product.slug}}"
+                /> </a>
+                <a href=""
+                  > <img
+                    src="{{product.image}}"
+                    alt="{{product.slug}}"
+                /> </a>
+                <div class="sale-flash badge bg-dark p-2">{{product.discount}} off*</div>
+                <div class="bg-overlay">
+                  <div
+                    class="bg-overlay-content align-items-end justify-content-between"
+                    data-hover-animate="fadeIn"
+                    data-hover-speed="400"
+                  >
+                    <a href="#" class="btn btn-dark me-2"></a>
+                      <i class="icon-shopping-basket"> </i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn btn-dark"
+                      data-lightbox="ajax"
+                      ><i class="icon-line-expand"></i
+                    > </a>
+                  </div>
+                  <div class="bg-overlay-bg bg-transparent"></div>
+                </div>
               </div>
-              <div ng-repeat="product in products |orderBy: '-discount' | limitTo:12 " ng-show="product.price != product.orginalPrice"
-                class="product col-md-2 col-sm-6 text-center d-block position-relative overflow-hidden h-100"
-              >
-                <div class="border-0 h-shadow h-translatey-sm all-ts">
-                  <div class="product-image">
-                    <a href="">
-                      <img
-                        src="{{product.image}}"
-                        alt="{{product.slug}}"
-                    /> </a>
-                    <a href=""
-                      > <img
-                        src="{{product.image}}"
-                        alt="{{product.slug}}"
-                    /> </a>
-                    <div class="sale-flash badge bg-dark p-2">{{product.discount}} off*</div>
-                    <div class="bg-overlay">
-                      <div
-                        class="bg-overlay-content align-items-end justify-content-between"
-                        data-hover-animate="fadeIn"
-                        data-hover-speed="400"
-                      >
-                        <a href="#" class="btn btn-dark me-2"></a>
-                          <i class="icon-shopping-basket"> </i>
-                        </a>
-                        <a
-                          href="#"
-                          class="btn btn-dark"
-                          data-lightbox="ajax"
-                          ><i class="icon-line-expand"></i
-                        > </a>
-                      </div>
-                      <div class="bg-overlay-bg bg-transparent"></div>
-                    </div>
-                  </div>
-                  <div class="product-desc">
-                    <div class="product-title">
-                      <h3><a href="" ng-click="productClick(product)">{{product.name}}</a></h3>
-                    </div>
-                    <div class="product-price">
-                      <del>{{product.originalPrice}}₫</del> <br>
-                      <ins>{{product.price}}₫</ins>
-                    </div>
-                  </div>
+              <div class="product-desc">
+                <div class="product-title">
+                  <h3><a href="" ng-click="productClick(product)">{{product.name}}</a></h3>
+                </div>
+                <div class="product-price">
+                  <del>{{product.originalPrice}}₫</del> <br>
+                  <ins>{{product.price}}₫</ins>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
-    <script src="../include/js/jquery.js"></script>
-    <script src="../include/js/plugins.min.js"></script>
-
-    <script src="../include/js/functions.js"></script>
-  </body>
-</html>
-
-
+  </section>
+</div>
