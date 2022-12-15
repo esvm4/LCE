@@ -68,6 +68,7 @@ myApp.config(function($routeProvider,$locationProvider){
     })
     .when("/userinfo", {
       templateUrl: "../views/userinfo.html"
+      
     })
     //khởi tạo mặc định chạy trang home
     .otherwise({
@@ -201,6 +202,7 @@ myApp.controller("myController",function myController($rootScope, $scope, $locat
       $scope.admin=false;
       $scope.login={};
     }
+    
 })
 
 
